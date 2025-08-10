@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binabox Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -18,7 +21,7 @@
         </ul>
       </nav>
       <input type="text" name="search" id="search" placeholder="search" />
-      <a href="Discord">Discord</a>
+      <a href="Discord" class="link_border">Discord</a>
       <button>Log in</button>
     </header>
 
@@ -32,15 +35,15 @@
           <dt>1000+</dt>
           <dd>Profiles whitelisted</dd>
         </dl>
-        <a href="Connect">Connect wallet</a>
-        <a href="Whitelist">Whitelist now</a>
+        <button>Connect wallet</button>
+        <a href="Whitelist" class="link_border">Whitelist now</a>
         <img src="#" alt="banner-imgae" />
       </section>
 
       <section>
         <img src="#" alt="folder" />
         <h2>Catalog</h2>
-        <a href="#">See all</a>
+        <a href="#" class="link_border">See all</a>
         <button type="button">&lt;</button>
         <button type="button">&gt;</button>
         <ul>
@@ -48,9 +51,9 @@
             <a href="#">
               <article>
                 <img src="#" alt="Echo of Bones" />
-                <span>New</span>
-                <span>$1990</span>
-                <h3>Echo of Bones</h3>
+                <span class="catalog-card new">New</span>
+                <span class="catalog-price">$1990</span>
+                <p class="catalog_text">Echo of Bones</p>
               </article>
             </a>
           </li>
@@ -58,9 +61,9 @@
             <a href="#">
               <article>
                 <img src="#" alt="Nyx the watcher" />
-                <span>New</span>
-                <span>$299.99</span>
-                <h3>Nyx the watcher</h3>
+                <span class="catalog-card new">New</span>
+                <span class="catalog-price">$299.99</span>
+                <p class="catalog_text">Nyx the watcher</p>
               </article>
             </a>
           </li>
@@ -68,9 +71,9 @@
             <a href="#">
               <article>
                 <img src="#" alt="Blade" />
-                <span>Sold out</span>
-                <span>$20</span>
-                <h3>Blade of silence</h3>
+                <span class="catalog-card sold_out">Sold out</span>
+                <span class="catalog-price">$20</span>
+                <p class="catalog_text">Blade of silence</p>
               </article>
             </a>
           </li>
@@ -78,9 +81,8 @@
             <a href="#">
               <article>
                 <img src="#" alt="Data core:Alpha" />
-                <span>New</span>
-                <span>$1,000,000</span>
-                <h3>Data core:Alpha</h3>
+                <span class="catalog-price">$1,000,000</span>
+                <p class="catalog_text">Data core:Alpha</p>
               </article>
             </a>
           </li>
@@ -88,9 +90,8 @@
             <a href="#">
               <article>
                 <img src="#" alt="Phantom Console" />
-                <span>New</span>
-                <span>$199.5</span>
-                <h3>Phantom Console</h3>
+                <span class="catalog-price">$199.5</span>
+                <p class="catalog_text">Phantom Console</p>
               </article>
             </a>
           </li>
@@ -98,23 +99,23 @@
       </section>
 
       <section>
-        <h2>Our blog</h2>
+        <h2 class="centered-h2">Our blog</h2>
         <ul>
           <li>
             <a href="#">
               <article>
                 <img src="#" alt="Neural Drift" />
-                <span>NFT</span>
+                <span class="blog_card_discription">NFT</span>
                 <img src="" alt="icon" />
                 <span>NOVA RIVEN</span>
                 <span>|</span>
                 <time datetime="2022 Dec 04">04 Dec 2022</time>
                 <h3>Neural Dift</h3>
-                <p>
+                <p class="blog_text">
                   I woke up inside the void.My body stayed in the pass - only
                   thoughts were allowed throug...
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -122,17 +123,17 @@
             <a href="#">
               <article>
                 <img src="#" alt="Deadframe" />
-                <span>DROP</span>
+                <span class="blog_card_discription">DROP</span>
                 <img src="" alt="icon" />
                 <span>Kairo Null</span>
                 <span>|</span>
                 <time datetime="2022 Dec 06">06 Dec 2022</time>
                 <h3>Deadframe</h3>
-                <p>
+                <p class="blog_text">
                   He just stood there,waiting.Not for a person - for a
                   signal.Like the memoryof the network...
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -140,17 +141,17 @@
             <a href="#">
               <article>
                 <img src="#" alt="Glitch Panther" />
-                <span>NFT</span>
+                <span class="blog_card_discription">NFT</span>
                 <img src="#" alt="icon" />
                 <span>Synthya Void</span>
                 <span>|</span>
                 <time datetime="2022 Dec 07">07 Dec 2022</time>
                 <h3>Glitch Panther</h3>
-                <p>
+                <p class="blog_text">
                   Cats always knew more than they showed.Especially the ones tha
                   vanish into code.
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -158,17 +159,17 @@
             <a href="#">
               <article>
                 <img src="#" alt="Primal.exe" />
-                <span>RARE</span>
+                <span class="blog_card_discription">RARE</span>
                 <img src="#" alt="icon" />
                 <span>Dr.Wex Omega</span>
                 <span>|</span>
                 <time datetime="2022 Dec 08">08 Dec 2022</time>
                 <h3>Primal.exe</h3>
-                <p>
+                <p class="blog_text">
                   We tried to resurrect the post.What we got was rage compressed
                   into an algorithm
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -176,17 +177,17 @@
             <a href="#">
               <article>
                 <img src="#" alt="White Protocol" />
-                <span>NFT</span>
+                <span class="blog_card_discription">NFT</span>
                 <img src="" alt="icon" />
                 <span>Tony Nguyen</span>
                 <span>|</span>
                 <time datetime="2022 Jun 20">20 Jun 2022</time>
                 <h3>White Protocol</h3>
-                <p>
+                <p class="blog_text">
                   At first, it was just a signal - clean, white, hypnotic. We
                   didn't know it wasd alive.
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -194,17 +195,17 @@
             <a href="#">
               <article>
                 <img src="#" alt="Retrocore" />
-                <span>ARTIFACT</span>
+                <span class="blog_card_discription">ARTIFACT</span>
                 <img src="" alt="icon" />
                 <span>Echo Zero</span>
                 <span>|</span>
                 <time datetime="2022 Dec 09">09 Dec 2022</time>
                 <h3>Retrocore</h3>
-                <p>
+                <p class="blog_text">
                   This console comes from a game on one remembers how to
                   play.But it's still powered on.
                 </p>
-                <span>Read more &gt;</span>
+                <span class="blog_read-more">Read more &gt;</span>
               </article>
             </a>
           </li>
@@ -212,8 +213,8 @@
       </section>
 
       <section>
-        <h2>About us</h2>
-        <p>
+        <h2 class="centered-h2">About us</h2>
+        <p class="about_text">
           We craft digital artifactsfor those who live between worlds. Our space
           is built for creators, collectors, and the quietly obsessed
         </p>
@@ -221,8 +222,8 @@
           <li>
             <a href="#">
               <span>01</span>
-              <h3>Crystal Clear Quality</h3>
-              <p>
+              <h3 class="subheader">Crystal Clear Quality</h3>
+              <p class="about-card_text">
                 Every NFT we drop is razor-sharp,high-res,and glitch-free. Arts
                 that hits hard and stays clean.
               </p>
@@ -231,8 +232,8 @@
           <li>
             <a href="#">
               <span>02</span>
-              <h3>Curated Depth</h3>
-              <p>
+              <h3 class="subheader">Curated Depth</h3>
+              <p class="about-card_text">
                 Not just big - meaningful. Each piece tells a story, every
                 collection builds a universe.
               </p>
@@ -241,8 +242,8 @@
           <li>
             <a href="#">
               <span>03</span>
-              <h3>Rare Source Access</h3>
-              <p>
+              <h3 class="subheader">Rare Source Access</h3>
+              <p class="about-card_text">
                 Early drops. Backstage peeks our members don't scroll - they
                 unlock.
               </p>
@@ -251,25 +252,25 @@
           <li>
             <a href="#">
               <span>04</span>
-              <h3>Living Network</h3>
-              <p>
+              <h3 class="subheader">Living Network</h3>
+              <p class="about-card_text">
                 Our community isn't a list - it's a force. Artise, rebels,
                 dreamers.
               </p>
             </a>
           </li>
         </ol>
-        <a href="#">Read more</a>
+        <a href="#" class="abut-us_read">Read more</a>
       </section>
 
       <section>
-        <h2>Our team</h2>
+        <h2 class="centered-h2">Our team</h2>
         <ul>
           <li>
             <article>
               <img src="#" alt="Nova Riven" />
-              <h3>Nova Riven</h3>
-              <span>Creative Architect</span>
+              <h3 class="subheader">Nova Riven</h3>
+              <span class="our-team_occupation">Creative Architect</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -281,8 +282,8 @@
           <li>
             <article>
               <img src="#" alt="Echo Zero" />
-              <h3>Echo Zero</h3>
-              <span>Tech Whisperer</span>
+              <h3 class="subheader">Echo Zero</h3>
+              <span class="our-team_occupation">Tech Whisperer</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -294,8 +295,8 @@
           <li>
             <article>
               <img src="#" alt="Kairo Null" />
-              <h3>Kairo Null</h3>
-              <span>Lore Enguneer</span>
+              <h3 class="subheader">Kairo Null</h3>
+              <span class="our-team_occupation">Lore Enguneer</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -307,8 +308,8 @@
           <li>
             <article>
               <img src="#" alt="Dr.Wex Omega" />
-              <h3>Dr.Wex Omega</h3>
-              <span>Visual Disruptor</span>
+              <h3 class="subheader">Dr.Wex Omega</h3>
+              <span class="our-team_occupation">Visual Disruptor</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -320,8 +321,8 @@
           <li>
             <article>
               <img src="#" alt="Synthya Void" />
-              <h3>Synthya Void</h3>
-              <span>UX seer</span>
+              <h3 class="subheader">Synthya Void</h3>
+              <span class="our-team_occupation">UX seer</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -333,8 +334,8 @@
           <li>
             <article>
               <img src="#" alt="Mirlo Drift" />
-              <h3>Mirlo Drift</h3>
-              <span>Community Catalyst</span>
+              <h3 class="subheader">Mirlo Drift</h3>
+              <span class="our-team_occupation">Community Catalyst</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -346,8 +347,8 @@
           <li>
             <article>
               <img src="#" alt="Axon Rune" />
-              <h3>Axon Rune</h3>
-              <span>Security Ghost</span>
+              <h3 class="subheader">Axon Rune</h3>
+              <span class="our-team_occupation">Security Ghost</span>
               <ul>
                 <li><a href="#">facebook</a></li>
                 <li><a href="#">Telegram</a></li>
@@ -360,14 +361,14 @@
       </section>
 
       <section>
-        <h2>FAQs</h2>
+        <h2 class="centered-h2">FAQs</h2>
           <details>
             <a href="#">
               <summary>What are the NFTs?</summary>
               <span>&minus;</span>
               <hr />
-              <p>
-                NFTs <span>(non-fungible tokens)</span> are unique digital
+              <p class="details_text">
+               <span class="details_text-color">NFTs(non-fungible tokens)</span> are unique digital
                 objects ztored on the blockchain. They can be art,music, code,
                 memes, memories - anything that can be owned and vaerified. No
                 copies. No fakes. Just you and the chain
@@ -398,7 +399,7 @@
     <footer>
       <a href="#"><img src="#" alt="BINABOX" /></a>
       <p>We are the best way to check the rarity of NFT collection.</p>
-      <h3>Navigation</h3>
+      <h3 class="footer_nav">Navigation</h3>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Blog</a></li>

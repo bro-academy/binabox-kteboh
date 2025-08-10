@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif, serif;
+    background-color: #0d0d15;
+    color: #F5F8FB;
+}
+
+a {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #F5F8FB;
+    text-decoration: none;
+}
+
+.link_border {
+    border: 1px solid #3b3c4c;
+}
+
+ul li {
+    list-style: none;
+}
+
+dl dt {
+    font-family: "Bakbak One", sans-serif, serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    vertical-align: bottom;
+}
+
+dl dd {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: #0265DC;
+    color: #F5F8FB;
+    border: none;
+}
+
+h1,h2,h3 {
+    font-family: "Bakbak one", sans-serif, serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+}
+
+h1 span {
+    color: #0265DC;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.subheader {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+    /* catalog-styles */
+
+.catalog-price {
+    font-family: "Bakbak one", sans-serif, serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.catalog-card {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.new {
+    color: #0265DC;
+    background-color: #F5F8FB;
+}
+.sold_out {
+   color: #F5F8FB;
+   background-color: #EA3829;
+}
+
+.catalog_text {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.centered-h2 {
+    text-align: center;
+}
+
+  /* Our-blog-styles */
+
+.blog_card_discription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #0265DC;
+    background-color: #F5F8FB;
+}
+
+.blog_text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.blog_read-more {
+    border: 1px solid #3b3c4c;
+}
+
+/* About us styles  */
+
+.about_text {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.about-card_text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.abut-us_read {
+    border: 1px solid #3b3c4c;
+}
+
+/* Our team styles */
+
+.our-team_occupation {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+/* FAQs styles */
+
+summary {
+    font-family: "Bakbak One", sans-serif, serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.details_text {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.details_text-color {
+    color: #0265DC;
+}
+
+/* blog.html */
+
+.Basilisks_text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+blockquote {
+    font-family: Bakbak One;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    background-color: #002754;
+}
+
+.blockquote_rating {
+    background-color: #002754;
+}
+
+figcaption {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.avatar_gen {
+    color: #0265DC;
+}
+
+aside ul li a {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+aside ul li button {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+/* footer styles */
+
+footer p {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.footer_nav {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+footer ul li a {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
