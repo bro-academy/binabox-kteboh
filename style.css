@@ -126,9 +126,9 @@ a {
 }
 
 /* span color blue */
-.banner__tittle--color,
-.overview__answer--color,
-.post__text--color {
+.banner__action--color,
+.overview__term--color,
+.post__link--color {
     color: var(--label-color);
 }
 
@@ -302,7 +302,7 @@ a {
     line-height: 20px;
     color: var(--homepage-text-color);
 }
-.banner__unit--text {
+.banner__highlight--text {
     color:  #E7EEF7A8;
 }
 .post__caption {
