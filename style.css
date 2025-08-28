@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    padding: 64px;
 }
 
 .button {
@@ -41,16 +42,23 @@ body {
     border: none;
 }
 
-.link,
-.page-header__search-input  {
+.link {
    color: var(--homepage-text-color);
-    font-family: 'poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
     border: 2px solid var(--link-border-color);
     padding: 10px 24px;
-    max-width: 120px;
+}
+
+.page-header__search-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E7EEF7A8;
+    background-color: #0D0D15;
+    border: 2px solid var(--link-border-color);
+    padding: 10px 24px;
 }
 
 li {
@@ -63,12 +71,9 @@ a {
 }
 
 /* header section */
- .page-header__link-primary,
- .banner__unit {
+ .page-header__link-primary {
     padding: 8px 20px;
-
     border: 2px solid transparent;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -79,10 +84,11 @@ a {
  }
 /* banner section */
 .banner__tittle,
+.breadcrumbs__tittle,
 .banner__total,
 .product__tittle,
 .product__price,
-.card__tittle,
+.blog__tittle,
 .company__tittle,
 .subtittle,
 .employees__tittle,
@@ -93,10 +99,10 @@ a {
 }
 
 /* grouping elements according to text color */
-.card__author,
+.blog__author,
 .banner__item,
 .product__description,
-.card__text,
+.blog__text,
 .company__description,
 .company__text,
 .employees__speciality {
@@ -111,13 +117,14 @@ a {
 }
 
 .product__tittle,
-.card__tittle,
+.blog__tittle,
 .company__tittle,
 .employees__tittle,
 .overview__tittle {
     color: var(--primary-color);
 }
 .banner__tittle,
+.breadcrumbs__tittle,
 .banner__total {
     font-size: 52px;
     line-height: 62px;
@@ -127,8 +134,7 @@ a {
 
 /* span color blue */
 .banner__action--color,
-.overview__term--color,
-.post__link--color {
+.overview__term--color {
     color: var(--label-color);
 }
 
@@ -152,25 +158,29 @@ a {
     font-size: 24px;
     line-height: 32px;
 }
+.product__button-primary--frame {
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--link-border-color)
+}
 .product__button--color {
     color: #0D0D15;
 }
 .product__item,
-.card__item, 
+.blog__item, 
 .company__item,
 .employees__item,
 .overview__item  {
     background-color: var(--secondary-bg-color);
 }
 .product__label,
-.card__label {
+.blog__label {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: var(--label-color);
     background-color: var(--label-bg-color);
 }
-.product__label--background {
+.product__label--sold-out {
     background-color: var(--label-modifier-color);
     color: var(--label-primary-color);
 }
@@ -188,7 +198,7 @@ a {
 
 /* our blog section */
 
-.card__tittle,
+.blog__tittle,
 .company__tittle,
 .employees__tittle,
 .overview__tittle {
@@ -198,31 +208,34 @@ a {
     text-align: center;
 }
 
-.card__author,
-.card__date {
+.blog__author,
+.blog__date {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    text-transform: uppercase;
+    color: var(--homepage-text-primary-color);
 }
-.card__subtittle {
+.blog__author {
+   text-transform: uppercase;
+}
+.blog__subtittle {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
 }
-.card__description {
+.blog__description {
     font-size: 16px;
     line-height: 24px;
 }
-.card__text {
+.blog__text {
     font-size: 16px;
     line-height: 24px;
 }
-.card__link {
+.blog__link {
     font-size: 16px;
     line-height: 24px;
 }
-.card__action,
+.blog__action,
  .company__action {
     display: block;
     margin: auto;
@@ -289,20 +302,20 @@ a {
 
 /* blog.html section */
 
-.banner__tittle--action {
+.breadcrumbs__tittle--action {
     text-align: center;
 }
-.banner__menu {
+.breadcrumbs__menu {
     display: flex; 
     justify-content: center;
 }
-.banner__unit {
+.breadcrumbs__unit {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: var(--homepage-text-color);
 }
-.banner__highlight--text {
+.breadcrumbs__highlight--text {
     color:  #E7EEF7A8;
 }
 .post__caption {
@@ -322,6 +335,9 @@ a {
     line-height: 48px;
     letter-spacing: -0.5px;
 }
+.post__item {
+    list-style: disc;
+}
 .post__quote,
 .post__subtittle {
     font-size: 28px;
@@ -339,6 +355,10 @@ a {
 .post__quote--background,
 .post__rating {
     background-color: var(--qoute-bg-color);
+}
+.post__link--color {
+    color: #78BBFA;
+;
 }
 .post__rating {
     font-weight: 600;
