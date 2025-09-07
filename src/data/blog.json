@@ -1,0 +1,92 @@
+{
+  "page": {
+    "title": "OUR BLOG"
+  },
+  "header": {
+    "logo": "logo.png",
+    "searchPlaceholder": "search",
+    "discordLink": "Discord",
+    "button": "Log in",
+    "menu": [
+      { "label": "Home", "active": false },
+      { "label": "Blog", "active": true },
+      { "label": "Catalog", "active": false },
+      { "label": "Contact Us", "active": false }
+    ]
+  },
+  "banner": {
+    "title": "Our blog",
+    "breadcrumb": [
+      { "label": "Home |", "active": false },
+      { "label": "Our blog |", "active": false },
+      { "label": "The Basilisks NFT", "active": true }
+    ]
+  },
+  "post": {
+    "title": "The Basilisks NFT",
+    "category": "Gaming",
+    "author": {
+      "name": "Tony Nguyen",
+      "date": "2022-06-20",
+      "dateFormatted": "20 Jun 2022",
+      "icon": "tony-icon.png"
+    },
+    "highlight": "Basilisks",
+    "intro": "aren't just creatures - they're digital apex predators...",
+    "details": [
+      "In this game, your Basilisk is your warrior...",
+      "Each NFT Basilisk has a set of traits...",
+      "The game's AI learns from every move..."
+    ],
+    "features": [
+      { "label": "Unique DNA structure", "icon": "unique.png" },
+      { "label": "PvP-enable arena", "icon": "pvp.png" },
+      { "label": "Permanent death mode", "icon": "death.png" },
+      { "label": "Metaverse integration", "icon": "metaverse.png" }
+    ],
+    "quote": "The first huge metaverse arena...",
+    "rating": {
+      "icon": "stars.png",
+      "score": "8.5/10",
+      "source": "Markout Corporation"
+    },
+    "figures": [
+      {
+        "img": "basilisk1.jpg",
+        "alt": "Man vs the Dragon",
+        "caption": "A Basilisk enters the arena..."
+      },
+      {
+        "img": "basilisk2.jpg",
+        "alt": "Gen-3 Basilisk",
+        "caption": "Close-up of a Gen-3 Basilisk..."
+      },
+      {
+        "img": "basilisk3.jpg",
+        "alt": "Bonded Basilisk",
+        "caption": "A bonded Basilisk with its summoner..."
+      }
+    ],
+    "subsections": [
+      {
+        "title": "NFTs are digital assets that represent real-world objects",
+        "text": [
+          "Setting up your avatar and personalizing your nickname on Binance...",
+          "Alternatively, if you're on nft.binance.com..."
+        ]
+      },
+      {
+        "title": "NFT Avatar Generators",
+        "text": [
+          "Looking to join the pack? Use the NFT Avatar Generator..."
+        ]
+      }
+    ],
+    "tags": ["NFT", "Metaverse", "Crypto"],
+    "share": ["Twitter", "Facebook", "Instagram"]
+  },
+  "aside": {
+    "categories": ["Our blog (12)", "Metaverse (24)", "Gaming (24)", "Arts (24)", "Robot (24)", "Lauchpad (24)", "Crypto (430)"],
+    "tags": ["NFT", "ICO", "Robot", "Crypto", "Lauch", "Metaverse"]
+  }
+}

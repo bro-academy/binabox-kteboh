@@ -1,0 +1,19 @@
+<section class="employees">
+  <h2 class="employees__tittle">{{ employees.title }}</h2>
+  <ul class="employees__list">
+    {% for member in employees.members %}
+      <li class="employees__item">
+        <article class="employees__item-content">
+          <img src="{{ member.image }}" alt="{{ member.name }}" class="employees__image"/>
+          <h3 class="employees__name subtittle">{{ member.name }}</h3>
+          <span class="employees__speciality">{{ member.speciality }}</span>
+          <ul class="employees__social">
+            {% for social in member.socials %}
+              <li class="employees__social-item"><a href="#">{{ social }}</a></li>
+            {% endfor %}
+          </ul>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
