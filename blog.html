@@ -13,30 +13,29 @@
   <body>
     <!-- updated with BEM -->
     <header class="page-header">
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation">
         <a href="#" class="page-header__logo"><img src="#" alt="BINABOX" /></a>
         <ul class="page-header__menu">
-          <li class="page-header__item "><a href="#" class="page-header__link-primary">Home</a></li>
+          <li class="page-header__item"><a href="#" class="page-header__link-primary">Home</a></li>
           <li class="page-header__item"><a href="#" class="page-header__link-primary page-header__link-primary--active">Blog</a></li>
           <li class="page-header__item"><a href="#" class="page-header__link-primary">Catalog</a></li>
           <li class="page-header__item"><a href="#" class="page-header__link-primary">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="page-header__form form">
-        <input class="page-header__search-input input" type="text" name="search" id="search" placeholder="search" />
+      <div class="page-header__form">
+        <input class="page-header__search-input" type="text" name="search" id="search" placeholder="search" />
         <a href="Discord" class="page-header__link link">Discord</a>
         <button class="page-header__button  button">Log in</button>
       </div>
     </header>
 
-    <main class="content">
-
-      <section class="banner">
-        <h1 class="banner__tittle banner__tittle--action">Our blog</h1>
-        <ul class="banner__menu">
-          <li class="banner__unit"><a href="#">Home |</a></li>
-          <li class="banner__unit"><a href="#">Our blog |</a></li>
-          <li class="banner__unit"><a href="#" class=" banner__unit--text">The Basilisks NFT</a></li>
+    <main>
+      <section class="breadcrumbs">
+        <h1 class="breadcrumbs__tittle breadcrumbs__tittle--action">Our blog</h1>
+        <ul class="breadcrumbs__menu">
+          <li class="breadcrumbs__unit"><a href="#">Home |</a></li>
+          <li class="breadcrumbs__unit"><a href="#">Our blog |</a></li>
+          <li class="breadcrumbs__unit"><a href="#" class="breadcrumbs__highlight breadcrumbs__highlight--text">The Basilisks NFT</a></li>
         </ul>
       </section>
 
@@ -56,7 +55,7 @@
           <time datetime="2022-06-20" class="post__date">20 Jun 2022</time>
         </p>
         <p class="post__text">
-          <span class="post__text post__text--color">Basilisks</span> aren't just creatures - they're digital apex
+          <span class="post__highlight">Basilisks</span> aren't just creatures - they're digital apex
           predators. Forged on the Ethereum chain and raised in a metaverse
           colosseum, they live to dominate,duel,and devour. Every one of them is
           an NFT with unique DNA, traits, and bloodlust.
@@ -93,7 +92,8 @@
             <a href="#" class="post__logo-item"><img src="#" alt="Metaverse" />Metaverse integration</a>
           </li>
         </ul>
-        <blockquote class="post__quote post__quote--background">
+
+        <blockquote class="post__quote       post__quote--background">
           "The first huge metaverse arena to arrange live sports, hang out and
           even make bets and wagers"
         </blockquote>
@@ -121,7 +121,7 @@
             A bonded Basilisk with its summoner. Loyalty is minted
           </figcaption>
         </figure>
-      <!-- think of away to combine the style with h2 -->
+      
         <h3 class="post__subtittle">NFTs are digital assets that represent real-world objects</h3>
         <p class="post__text">
           Setting up your avatar and personalizing your nickname on Binance is
@@ -143,7 +143,7 @@
         <p class="post__text">
           Looking to join the pack?
           <br class="post__line-break"/>
-          Use the <span class="post__text"><a href="#" class="post__text--color">NFT Avatar Generator</a></span> to creat your beast - or
+          Use the <span class="post__highlight"><a href="#" class="post__link post__link--color">NFT Avatar Generator</a></span> to creat your beast - or
           grab a rare egg on the market place. You name it. You own it. You
           unleash it.
         </p>
@@ -182,7 +182,7 @@
           <li class="aside__item link"><a href="#">ICO</a></li>
           <li class="aside__item link"><a href="#">Robot</a></li>
           <li class="aside__item link"><a href="#">Crypto</a></li>
-          <li class="aside__item link"><a href="#">Lauch</a></li>
+          <li class="aside__item link"><a href="#">Lauchpad</a></li>
           <li class="aside__item link"><a href="#">Metaverse</a></li>
         </ul>
       </aside>
@@ -190,7 +190,7 @@
       <footer class="footer">
         <a href="#" class="footer__logo"><img src="#" alt="BINABOX" /></a>
         <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
-        <h3 class="footer__navigation">Navigation</h3>
+        <h2 class="footer__navigation">Navigation</h2>
         <ul class="footer__items">
           <li class="footer__item"><a href="#">Home</a></li>
           <li class="footer__item"><a href="#">Blog</a></li>

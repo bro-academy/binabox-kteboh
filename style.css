@@ -5,12 +5,15 @@
 }
 
 :root {
+    --homepage-text-color: #F5F8FB;
+    --homepage-text-primary-color: #EFF5FAD1;
+    --banner-description-color: #D9D9D9;
     --primary-color: #F8F7FF;
    --main-bg-color: #0D0D15;
    --secondary-bg-color: #1D1C28;
    --qoute-bg-color: #002754;
    --button-bg-color: #0265DC;
-   --button-color:#F5F8FB;
+   --button-color: #F5F8FB;
    --label-modifier-color: #EA3829;
     --label-primary-color: #F5F8FB;
    --link-border-color: #D0D7FB2B;
@@ -25,6 +28,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    padding: 64px;
 }
 
 .button {
@@ -38,16 +42,24 @@ body {
     border: none;
 }
 
-.link,
-.page-header__search-input  {
-   color: var(--primary-color);
-    font-family: 'poppins', sans-serif;
+.link {
+   color: var(--homepage-text-color);
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 28px;
     border: 2px solid var(--link-border-color);
     padding: 10px 24px;
-    max-width: 120px;
+    max-width: 140px;
+}
+
+.page-header__search-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E7EEF7A8;
+    background-color: #0D0D15;
+    border: 2px solid var(--link-border-color);
+    padding: 10px 24px;
 }
 
 li {
@@ -60,12 +72,9 @@ a {
 }
 
 /* header section */
- .page-header__link-primary,
- .banner__unit {
+ .page-header__link-primary {
     padding: 8px 20px;
-    gap: 8;
     border: 2px solid transparent;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -76,10 +85,12 @@ a {
  }
 /* banner section */
 .banner__tittle,
+.breadcrumbs__tittle,
 .banner__total,
 .product__tittle,
 .product__price,
-.card__tittle,
+.blog__tittle,
+.company__tittle,
 .subtittle,
 .employees__tittle,
 .overview__tittle,
@@ -88,17 +99,43 @@ a {
     font-weight: 400;
 }
 
+/* grouping elements according to text color */
+.blog__author,
+.banner__item,
+.product__description,
+.blog__text,
+.company__description,
+.company__text,
+.employees__speciality {
+    color: var(--homepage-text-primary-color);
+}
+
+/* subtittles color group */
+.subtittle,
+.overview__answer,
+.overview__question {
+    color: var(--homepage-text-color);
+}
+
+.product__tittle,
+.blog__tittle,
+.company__tittle,
+.employees__tittle,
+.overview__tittle {
+    color: var(--primary-color);
+}
 .banner__tittle,
+.breadcrumbs__tittle,
 .banner__total {
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
+    color: var(--homepage-text-color);
 }
 
 /* span color blue */
-.banner__tittle--color,
-.overview__answer--color,
-.post__text--color {
+.banner__action--color,
+.overview__term--color {
     color: var(--label-color);
 }
 
@@ -108,7 +145,11 @@ a {
     font-size: 20px;
     line-height: 28px;
 }
+.banner__description {
+    color: var(--banner-description-color);
+}
 .banner__item {
+    color: var(--homepage-text-primary-color);
     font-size: 16px;;
     line-height: 24px;
 }
@@ -118,40 +159,47 @@ a {
     font-size: 24px;
     line-height: 32px;
 }
+.product__button-primary--highlight {
+    background-color: var(--main-bg-color);
+    border: 2px solid var(--link-border-color)
+}
 .product__button--color {
     color: #0D0D15;
 }
 .product__item,
-.card__item, 
+.blog__item, 
 .company__item,
 .employees__item,
 .overview__item  {
     background-color: var(--secondary-bg-color);
 }
 .product__label,
-.card__label {
+.blog__label {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: var(--label-color);
     background-color: var(--label-bg-color);
 }
-.product__label--background {
+.product__label--sold-out {
     background-color: var(--label-modifier-color);
     color: var(--label-primary-color);
 }
 .product__price {
+    color: var(--homepage-text-color);
     font-size: 36px;
     line-height: 48px;
+    letter-spacing: -0.5px;
 }
 .product__description {
     font-weight: 500;
     font-size: 20px;
+    line-height: 28px;
 }
 
 /* our blog section */
 
-.card__tittle,
+.blog__tittle,
 .company__tittle,
 .employees__tittle,
 .overview__tittle {
@@ -161,23 +209,34 @@ a {
     text-align: center;
 }
 
-.card__author,
-.card__date {
+.blog__author,
+.blog__date {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    text-transform: uppercase;
+    color: var(--homepage-text-primary-color);
 }
-.card__subtittle {
+.blog__author {
+   text-transform: uppercase;
+}
+.blog__subtittle {
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
 }
-.card__description {
+.blog__description {
     font-size: 16px;
     line-height: 24px;
 }
-.card__action,
+.blog__text {
+    font-size: 16px;
+    line-height: 24px;
+}
+.blog__link {
+    font-size: 16px;
+    line-height: 24px;
+}
+.blog__action,
  .company__action {
     display: block;
     margin: auto;
@@ -233,6 +292,7 @@ a {
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
+    color: var(--homepage-text-color);
 }
 .footer__item {
     font-family: Poppins;
@@ -243,15 +303,21 @@ a {
 
 /* blog.html section */
 
-.banner__tittle--action {
+.breadcrumbs__tittle--action {
     text-align: center;
 }
-.banner__menu {
+.breadcrumbs__menu {
     display: flex; 
     justify-content: center;
 }
-.banner__unit--text {
-    color:  #9da2aa;
+.breadcrumbs__unit {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--homepage-text-color);
+}
+.breadcrumbs__highlight--text {
+    color:  #E7EEF7A8;
 }
 .post__caption {
     font-weight: 500;
@@ -270,6 +336,9 @@ a {
     line-height: 48px;
     letter-spacing: -0.5px;
 }
+.post__item {
+    list-style: disc;
+}
 .post__quote,
 .post__subtittle {
     font-size: 28px;
@@ -281,11 +350,16 @@ a {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    color: var(--homepage-text-primary-color);
 }
 /* post__text, post__item and post__logo-item get styles from the body */
 .post__quote--background,
 .post__rating {
     background-color: var(--qoute-bg-color);
+}
+.post__link--color {
+    color: #78BBFA;
+;
 }
 .post__rating {
     font-weight: 600;
@@ -301,8 +375,10 @@ a {
 .aside__subtittle {
     font-size: 24px;
     line-height: 32px;
+    color: var(--homepage-text-color);
 }
 .aside__item {
+    color: var(--homepage-text-color);
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
