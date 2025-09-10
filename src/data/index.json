@@ -1,0 +1,221 @@
+{
+  "header": {
+    "logo": "#",
+    "menu": [
+      { "label": "Home", "url": "#", "active": true },
+      { "label": "Blog", "url": "#" },
+      { "label": "Catalog", "url": "#" },
+      { "label": "Contact Us", "url": "#" }
+    ],
+    "search_placeholder": "search",
+    "discord_link": "Discord",
+    "login_text": "Log in"
+  },
+
+  "banner": {
+    "title": "WITH",
+    "highlight": "BINABOX",
+    "subtitle": "EXPLORE NFT COLLECTION",
+    "description": "We are the best way to check the rarity of NFT collection",
+    "stats": [
+      { "total": "2200+", "label": "Total Item" },
+      { "total": "1000+", "label": "Profiles whitelisted" }
+    ],
+    "button_text": "Connect wallet",
+    "link": { "url": "Whitelist", "text": "Whitelist now" },
+    "image": { "src": "#", "alt": "banner-image" }
+  },
+  "icon": "#",
+
+  "title": "Catalog",
+  "see_all_link": "#",
+  "items": [
+      {
+        "image": "#",
+        "label": "New",
+        "price": "$1990",
+        "description": "Echo of Bones"
+      },
+      {
+        "image": "#",
+        "label": "New",
+        "price": "$299.99",
+        "description": "Nyx the watcher"
+      },
+      {
+        "image": "#",
+        "label": "Sold out",
+        "price": "$20",
+        "description": "Blade of silence",
+        "sold_out": true
+      },
+      {
+        "image": "#",
+        "price": "$1,000,000",
+        "description": "Data core:Alpha"
+      },
+      {
+        "image": "#",
+        "price": "$199.5",
+        "description": "Phantom Console"
+      }
+    ],
+
+  "title": "Our blog",
+  "articles": [
+    {
+      "image": "#",
+      "label": "NFT",
+      "icon": "",
+      "author": "NOVA RIVEN",
+      "date": "2022-12-04",
+      "title": "Neural Drift",
+      "excerpt": "I woke up inside the void.My body stayed in the pass - only thoughts were allowed throug...",
+      "url": "#"
+    },
+    {
+      "image": "#",
+      "label": "DROP",
+      "icon": "",
+      "author": "Kairo Null",
+      "date": "2022-12-06",
+      "title": "Deadframe",
+      "excerpt": "He just stood there,waiting.Not for a person - for a signal.Like the memoryof the network...",
+      "url": "#"
+    },
+    {
+      "image": "#",
+      "label": "NFT",
+      "icon": "#",
+      "author": "Synthya Void",
+      "date": "2022-12-07",
+      "title": "Glitch Panther",
+      "excerpt": "Cats always knew more than they showed.Especially the ones tha vanish into code.",
+      "url": "#"
+    },
+    {
+      "image": "#",
+      "label": "Rare",
+      "icon": "#",
+      "author": "Dr.Wex Omega",
+      "date": "2022-12-08",
+      "title": "Primal.exe",
+      "excerpt": "We tried to resurrect the post.What we got was rage compressed into an algorithm",
+      "url": "#"
+    },
+    {
+      "image": "#",
+      "label": "NFT",
+      "icon": "#",
+      "author": "Tony Nguyen",
+      "date": "2022-06-20",
+      "title": "White Protocol",
+      "excerpt": "At first, it was just a signal - clean, white, hypnotic. We didn't know it wasd alive.",
+      "url": "#"
+    },
+    {
+      "image": "#",
+      "label": "ARTIFACT",
+      "icon": "#",
+      "author": "Echo Zero",
+      "date": "2022-12-09",
+      "title": "Retrocore",
+      "excerpt": "This console comes from a game on one remembers how to play.But it's still powered on.",
+      "url": "#"
+    }
+  ],
+  "read_more_url": "#",
+
+  "title": "About us",
+  "description": "We craft digital artifacts for those who live between worlds...",
+  "features": [
+    {
+      "order": "01",
+      "title": "Crystal Clear Quality",
+      "text": "Every NFT we drop is razor-sharp, high-res, and glitch-free..."
+    },
+    {
+      "order": "02",
+      "title": "Curated Depth",
+      "text": "Not just big - meaningful. Each piece tells a story..."
+    },
+     {
+      "order": "03",
+      "title": "Rare Source Access",
+      "text": "Early drops. Backstage peeks our members don't scroll - they unlock."
+    },
+     {
+      "order": "04",
+      "title": "Living Network",
+      "text": "  Our community isn't a list - it's a force. Artise, rebels, dreamers."
+    }
+  ],
+  "read_more_url": "#",
+
+  "title": "Our team",
+  "members": [
+    {
+        "name": "Nova Riven",
+        "image": "#",
+        "speciality": "Creative Architect",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+    {
+        "name": "Echo Zero",
+        "image": "#",
+        "speciality": "Tech Whisperer",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+      {
+        "name": "kairo Null",
+        "image": "#",
+        "speciality": "Lore Engineer",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+      {
+        "name": "Dr.Wex Omega",
+        "image": "#",
+        "speciality": "Visaul Disruptor",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+      {
+        "name": "Synthya Void",
+        "image": "#",
+        "speciality": "UX Seer",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+      {
+        "name": "Mirlo Drift",
+        "image": "#",
+        "speciality": "Community Catalyst",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    },
+      {
+        "name": "Axon Rune",
+        "image": "#",
+        "speciality": "Security Ghost",
+        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    }
+  ],
+  "title": "FAQs",
+  "items": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "<span class='overview__term overview__term--color'>NFTs (non-fungible tokens)</span> are unique digital objects stored on the blockchain...",
+      "open": true
+    },
+    {
+      "question": "How do I get NFTs?",
+      "open": false
+    },
+    {
+      "question": "How can we buy your NFTs",
+      "open": false
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "open": false
+    }
+  ] 
+}
+

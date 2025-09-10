@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F8F7FF;
+   --main-bg-color: #0D0D15;
+   --secondary-bg-color: #1D1C28;
+   --qoute-bg-color: #002754;
+   --button-bg-color: #0265DC;
+   --button-color:#F5F8FB;
+   --label-modifier-color: #EA3829;
+    --label-primary-color: #F5F8FB;
+   --link-border-color: #D0D7FB2B;
+   --label-bg-color: #F5F8FB;
+   --label-color: #0265DC;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.button {
+    padding: 10px 24px;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+}
+
+.link,
+.page-header__search-input  {
+   color: var(--primary-color);
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: 2px solid var(--link-border-color);
+    padding: 10px 24px;
+    max-width: 120px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* header section */
+ .page-header__link-primary,
+ .banner__unit {
+    padding: 8px 20px;
+    gap: 8;
+    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+ }
+
+ .page-header__link-primary--active {
+    border-bottom: 2px solid var(--button-bg-color);
+ }
+/* banner section */
+.banner__tittle,
+.banner__total,
+.product__tittle,
+.product__price,
+.card__tittle,
+.subtittle,
+.employees__tittle,
+.overview__tittle,
+.overview__question {
+    font-family: 'Bakbak One', sans-serif;
+    font-weight: 400;
+}
+
+.banner__tittle,
+.banner__total {
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+}
+
+/* span color blue */
+.banner__tittle--color,
+.overview__answer--color,
+.post__text--color {
+    color: var(--label-color);
+}
+
+.banner__description,
+.company__description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+.banner__item {
+    font-size: 16px;;
+    line-height: 24px;
+}
+
+/* catalog section */
+.product__tittle {
+    font-size: 24px;
+    line-height: 32px;
+}
+.product__button--color {
+    color: #0D0D15;
+}
+.product__item,
+.card__item, 
+.company__item,
+.employees__item,
+.overview__item  {
+    background-color: var(--secondary-bg-color);
+}
+.product__label,
+.card__label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--label-color);
+    background-color: var(--label-bg-color);
+}
+.product__label--background {
+    background-color: var(--label-modifier-color);
+    color: var(--label-primary-color);
+}
+.product__price {
+    font-size: 36px;
+    line-height: 48px;
+}
+.product__description {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* our blog section */
+
+.card__tittle,
+.company__tittle,
+.employees__tittle,
+.overview__tittle {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.card__author,
+.card__date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.card__subtittle {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+.card__description {
+    font-size: 16px;
+    line-height: 24px;
+}
+.card__action,
+ .company__action {
+    display: block;
+    margin: auto;
+    max-width: 153px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* about us section */
+/* .company__description { grouped styling with banner description} */
+.company__subtittle {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* our team section */
+.employees__list {
+    display: flex;
+    max-width: 1600px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.employees__item {
+      padding: 32px;
+}
+
+.employees__name {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* FAQs section */
+.overview__question {
+    font-size: 24px;
+    line-height: 32px;
+}
+.overview__answer {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* footer section */
+
+.footer__text {
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer__navigation {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+.footer__item {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* blog.html section */
+
+.banner__tittle--action {
+    text-align: center;
+}
+.banner__menu {
+    display: flex; 
+    justify-content: center;
+}
+.banner__unit--text {
+    color:  #9da2aa;
+}
+.post__caption {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.post__tittle,
+.post__quote,
+.post__subtittle,
+.aside__subtittle {
+    font-family: 'Bakbak One', sans-serif;
+    
+}
+.post__tittle {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+.post__quote,
+.post__subtittle {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.post__address,
+.post__date {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* post__text, post__item and post__logo-item get styles from the body */
+.post__quote--background,
+.post__rating {
+    background-color: var(--qoute-bg-color);
+}
+.post__rating {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.post__info {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* aside section  */
+.aside__subtittle {
+    font-size: 24px;
+    line-height: 32px;
+}
+.aside__item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}

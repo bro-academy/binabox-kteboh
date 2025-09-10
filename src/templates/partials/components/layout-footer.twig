@@ -1,0 +1,17 @@
+<footer class="footer">
+  <a href="#" class="footer__logo"><img src="{{ footer.logo }}" alt="BINABOX" /></a>
+  <p class="footer__text">{{ footer.description }}</p>
+  <h2 class="footer__navigation">Navigation</h2>
+  <ul class="footer__items">
+    {% for item in footer.navigation %}
+      <li class="footer__item"><a href="#">{{ item }}</a></li>
+    {% endfor %}
+  </ul>
+  <hr class="footer__divider"/>
+  <p class="footer__text">{{ footer.copyright }}</p>
+  <ul class="footer__socials">
+    {% for social in footer.socials %}
+      <li class="footer__directories"><a href="#">{{ social }}</a></li>
+    {% endfor %}
+  </ul>
+</footer>

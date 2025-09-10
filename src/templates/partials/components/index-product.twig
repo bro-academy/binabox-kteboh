@@ -1,0 +1,22 @@
+<section class="product">
+  <img src="{{ product.icon }}" alt="folder" class="product__icon"/>
+  <h2 class="product__tittle">{{ product.title }}</h2>
+  <a href="{{ product.see_all_link }}" class="product__link--highlight link">See all</a>
+  <button class="button product__button-primary--highlight">&lt;</button>
+  <button class="button product__button--color">&gt;</button>
+  
+  <ul class="product__menu">
+    {% for item in product.items %}
+      <li class="product__item">
+        <article class="product__card">
+          <img src="{{ item.image }}" alt="{{ item.description }}" class="product__image"/>
+          {% if item.label %}
+            <span class="product__label{% if item.sold_out %} product__label--sold-out{% endif %}">{{ item.label }}</span>
+          {% endif %}
+          <span class="product__price">{{ item.price }}</span>
+          <h3 class="product__description">{{ item.description }}</h3>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

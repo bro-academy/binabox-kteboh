@@ -1,0 +1,42 @@
+{ 
+  "header": {
+    "logo": "logo.svg",
+    "logoAlt": "BINABOX",
+    "searchPlaceholder": "search",
+    "discord": {
+      "label": "Discord",
+      "url": "#"
+    },
+    "loginButton": "Log in",
+    "menu": [
+      {
+        "label": "Home",
+        "url": "#",
+        "active": true
+      },
+      {
+        "label": "Blog",
+        "url": "#",
+        "active": false
+      },
+      {
+        "label": "Catalog",
+        "url": "#",
+        "active": false
+      },
+      {
+        "label": "Contact Us",
+        "url": "#",
+        "active": false
+      }
+    ]
+  },
+  
+  "footer": {
+    "logo": "logo.png",
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "navigation": ["Home", "Blog", "Catalog", "Contact Us", "Terms Conditions", "Privacy Policy", "Whitepaper", "Help Center"],
+    "copyright": "BINABOX 2025 - All rights reserved",
+    "socials": ["Twitter", "Facebook", "Telegram", "Youtube", "Tiktok", "Discord"]
+  }
+}

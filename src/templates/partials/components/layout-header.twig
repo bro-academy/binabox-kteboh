@@ -1,0 +1,21 @@
+<header class="page-header">
+	<nav class="page-header__navigation">
+		<a href="#" class="page-header__logo">
+			<img src="{{ header.logo }}" alt="{{ header.logoAlt }}"/>
+		</a>
+		<ul class="page-header__menu">
+			{% for item in header.menu %}
+				<li class="page-header__item">
+					<a href="{{ item.url }}" class="page-header__link-primary {% if item.active %}page-header__link-primary--active{% endif %}">
+						{{ item.label }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+	<div class="page-header__form">
+		<input class="page-header__search-input" type="text" name="search" id="search" placeholder="{{ header.searchPlaceholder }}"/>
+		<a href="{{ header.discord.url }}" class="page-header__link link">{{ header.discord.label }}</a>
+		<button class="page-header__button button">{{ header.loginButton }}</button>
+	</div>
+</header>

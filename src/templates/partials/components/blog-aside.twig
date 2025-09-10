@@ -1,0 +1,21 @@
+<aside class="aside">
+	<h3 class="aside__tittle">Categories</h3>
+	<hr/>
+	<ul class="aside__menu">
+		{% for category in aside.categories %}
+			<li class="aside__item">
+				<a href="#">{{ category }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<h3 class="aside__tittle">Tag</h3>
+	<hr class="aside__divider"/>
+	<ul class="aside__menu">
+		{% for tag in aside.tags %}
+			<li class="aside__item link">
+				<a href="#">{{ tag }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</aside>
