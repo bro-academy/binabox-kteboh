@@ -2,24 +2,12 @@
   "page": {
     "title": "OUR BLOG"
   },
-  "header": {
-    "logo": "logo.png",
-    "searchPlaceholder": "search",
-    "discordLink": "Discord",
-    "button": "Log in",
-    "menu": [
-      { "label": "Home", "active": false },
-      { "label": "Blog", "active": true },
-      { "label": "Catalog", "active": false },
-      { "label": "Contact Us", "active": false }
-    ]
-  },
   "banner": {
     "title": "Our blog",
     "breadcrumb": [
-      { "label": "Home |", "active": false },
-      { "label": "Our blog |", "active": false },
-      { "label": "The Basilisks NFT", "active": true }
+      { "label": "Home", "href":"/home"},
+      { "label": "Our blog", "href":"/blog"},
+      { "label": "The Basilisks NFT", "href": "#", "active": true }
     ]
   },
   "post": {

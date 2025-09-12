@@ -1,13 +1,11 @@
 { 
+  "head": {
+    "title": "BINABOX"
+  },
   "header": {
     "logo": "logo.svg",
     "logoAlt": "BINABOX",
-    "searchPlaceholder": "search",
-    "discord": {
-      "label": "Discord",
-      "url": "#"
-    },
-    "loginButton": "Log in",
+    
     "menu": [
       {
         "label": "Home",
@@ -16,27 +14,94 @@
       },
       {
         "label": "Blog",
-        "url": "#",
-        "active": false
+        "url": "#"
       },
       {
         "label": "Catalog",
-        "url": "#",
-        "active": false
+        "url": "#"
       },
       {
         "label": "Contact Us",
-        "url": "#",
-        "active": false
+        "url": "#"
       }
-    ]
+    ],
+  "searchPlaceholder": "Search",
+  "discord": {
+    "url": "#",
+    "label": "Discord"
   },
-  
+  "loginButton": "Log in"
+  },
   "footer": {
     "logo": "logo.png",
     "description": "We are the best way to check the rarity of NFT collection.",
-    "navigation": ["Home", "Blog", "Catalog", "Contact Us", "Terms Conditions", "Privacy Policy", "Whitepaper", "Help Center"],
+    "title":"navigation",
+    "foot-nav": {
+    "item": [
+        {
+          "text": "Home",
+          "href": "#"
+        },
+         {
+          "text": "Blog",
+          "href": "#"
+        },
+         {
+          "text": "Catalog",
+          "href": "#"
+        },
+         {
+          "text": "contact Us",
+          "href": "#"
+        },
+         {
+          "text": "Terms Conditions",
+          "href": "#"
+        },
+         {
+          "text": "Privacy",
+          "href": "#"
+        },
+         {
+          "text": "Policy",
+          "href": "#"
+        },
+         {
+          "text": "Whitepaper",
+          "href": "#"
+        },
+         {
+          "text": "Help Center",
+          "href": "#"
+        }
+      ]
+    },
     "copyright": "BINABOX 2025 - All rights reserved",
-    "socials": ["Twitter", "Facebook", "Telegram", "Youtube", "Tiktok", "Discord"]
-  }
+    "social": [
+        {
+          "lable": "Twitter",
+          "href": "#"
+        },
+        {
+          "lable": "Facebook",
+          "href": "#"
+        },
+        {
+          "lable": "Telegram",
+          "href": "#"
+        },
+        {
+          "lable": "Youtube",
+          "href": "#"
+        },
+        {
+          "lable": "Tiktok",
+          "href": "#"
+        },
+        {
+          "lable": "Discord",
+          "href": "#"
+        }
+      ]
+    }
 }

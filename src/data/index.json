@@ -1,17 +1,13 @@
 {
-  "header": {
-    "logo": "#",
-    "menu": [
-      { "label": "Home", "url": "#", "active": true },
-      { "label": "Blog", "url": "#" },
-      { "label": "Catalog", "url": "#" },
-      { "label": "Contact Us", "url": "#" }
-    ],
-    "search_placeholder": "search",
-    "discord_link": "Discord",
-    "login_text": "Log in"
-  },
+  "pages": {
+    "index": {
+      "title": "Binabox Homepage"
+    },
 
+    "blog": {
+      "title": "Binabox Blog"
+    }
+  },
   "banner": {
     "title": "WITH",
     "highlight": "BINABOX",

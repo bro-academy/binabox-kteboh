@@ -1,0 +1,10 @@
+{% extends "src/templates/layouts/base.twig" %}
+{% block title %}
+	{{pages.blog.title}}
+{% endblock %}
+{% set current_page = "blog" %}
+{% block content %}
+	{% include "src/templates/partials/components/blog-breadcrums.twig" %}
+	{% include "src/templates/partials/components/blog-post.twig" %}
+	{% include "src/templates/partials/components/blog-aside.twig" %}
+{% endblock %}
