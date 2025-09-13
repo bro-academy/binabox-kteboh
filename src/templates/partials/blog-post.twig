@@ -1,65 +1,74 @@
- <section class="post">
-        {% for figure in post.figures %}
-          <figure class="post__figure">
-            <img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image" />
-            <figcaption class="post__caption">{{ figure.caption }}</figcaption>
-          </figure>
-        {% endfor %}
+<section class="post">
+	{% for figure in post.figures %}
+		<figure class="post__figure">
+			<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
+			<figcaption class="post__caption">{{ figure.caption }}</figcaption>
+		</figure>
+	{% endfor %}
 
-        <h2 class="post__tittle">{{ post.title }}</h2>
-        <button class="post__button button">{{ post.category }}</button>
+	<h2 class="post__tittle">{{ post.title }}</h2>
+	<button class="post__button button">{{ post.category }}</button>
 
-        <p class="post__text">
-          <img src="{{ post.author.icon }}" alt="Author icon" class="post__icon" />
-          <span class="post__address">{{ post.author.name }} |</span>
-          <time datetime="{{ post.author.date }}">{{ post.author.dateFormatted }}</time>
-        </p>
+	<p class="post__text">
+		<img src="{{ post.author.icon }}" alt="Author icon" class="post__icon"/>
+		<span class="post__address">{{ post.author.name }}
+			|</span>
+		<time datetime="{{ post.author.date }}">{{ post.author.dateFormatted }}</time>
+	</p>
 
-        <p class="post__text">
-          <span class="post__text post__text--color">{{ post.highlight }}</span> {{ post.intro }}
-        </p>
+	<p class="post__text">
+		<span class="post__text post__text--color">{{ post.highlight }}</span>
+		{{ post.intro }}
+	</p>
 
-        <ul class="post__menu">
-          {% for paragraph in post.details %}
-            <li class="post__item">{{ paragraph }}</li>
-          {% endfor %}
-        </ul>
+	<ul class="post__menu">
+		{% for paragraph in post.details %}
+			<li class="post__item">{{ paragraph }}</li>
+		{% endfor %}
+	</ul>
 
-        <ul class="post__logos">
-          {% for logo in post.features %}
-            <li class="post__logo">
-              <a href="#" class="post__logo-item"><img src="{{ logo.icon }}" alt="{{ logo.label }}" />{{ logo.label }}</a>
-            </li>
-          {% endfor %}
-        </ul>
+	<ul class="post__logos">
+		{% for logo in post.features %}
+			<li class="post__logo">
+				<a href="#" class="post__logo-item"><img src="{{ logo.icon }}" alt="{{ logo.label }}"/>{{ logo.label }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 
-        <blockquote class="post__quote post__quote--background">
-          "{{ post.quote }}"
-        </blockquote>
+	<blockquote class="post__quote post__quote--background">
+		"{{ post.quote }}"
+	</blockquote>
 
-        <span class="post__rating">
-          <img src="{{ post.rating.icon }}" alt="Rating icon" class="post__rating-icon" />
-          {{ post.rating.score }} {{ post.rating.source }}
-        </span>
+	<span class="post__rating">
+		<img src="{{ post.rating.icon }}" alt="Rating icon" class="post__rating-icon"/>
+		{{ post.rating.score }}
+		{{ post.rating.source }}
+	</span>
 
-        {% for sub in post.subsections %}
-          <h3 class="post__subtittle">{{ sub.title }}</h3>
-          {% for para in sub.text %}
-            <p class="post__text">{{ para }}</p>
-          {% endfor %}
-        {% endfor %}
+	{% for sub in post.subsections %}
+		<h3 class="post__subtittle">{{ sub.title }}</h3>
+		{% for para in sub.text %}
+			<p class="post__text">{{ para }}</p>
+		{% endfor %}
+	{% endfor %}
 
-        <p class="post__info">Tags:</p>
-        <ul class="post__info-menu">
-          {% for tag in post.tags %}
-            <li class="post__info-item link"><a href="#">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
+	<p class="post__info">Tags:</p>
+	<ul class="post__info-menu">
+		{% for tag in post.tags %}
+			<li class="post__info-item link">
+				<a href="#">{{ tag }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 
-        <p class="post__info">Share:</p>
-        <ul class="post__info-menu">
-          {% for share in post.share %}
-            <li class="post__info-item"><a href="#">{{ share }}</a></li>
-          {% endfor %}
-        </ul>
-      </section>
+	<p class="post__info">Share:</p>
+	<ul class="post__info-menu">
+		{% for share in post.share %}
+			<li class="post__info-item">
+				<a href="#">{{ share }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
+
+{# make it work  #}

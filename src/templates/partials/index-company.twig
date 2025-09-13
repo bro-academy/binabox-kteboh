@@ -1,14 +1,16 @@
 <section class="company">
-  <h2 class="company__tittle">{{ company.title }}</h2>
-  <p class="company__description">{{ company.description }}</p>
-  <ul class="company__menu">
-    {% for feature in company.features %}
-      <li class="company__item">
-        <span class="company__order">{{ feature.order }}</span>
-        <h3 class="company__subtittle subtittle">{{ feature.title }}</h3>
-        <p class="company__text">{{ feature.text }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-  <a href="{{ company.read_more_url }}" class="company__action link">Read more</a>
+	<h2 class="company__tittle">{{ company.title }}</h2>
+	<p class="company__description">{{ company.description }}</p>
+	<ul class="company__menu">
+		{% for feature in company.features %}
+			<li class="company__item">
+				<span class="company__order">{{ feature.order }}</span>
+				<h3 class="company__subtittle subtittle">{{ feature.title }}</h3>
+				<p class="company__text">{{ feature.text }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+	<a href="{{ company.read_more_url }}" class="company__action link">Read more</a>
 </section>
+
+{# make it work  #}
