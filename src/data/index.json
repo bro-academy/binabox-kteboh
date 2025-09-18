@@ -3,7 +3,6 @@
     "index": {
       "title": "Binabox Homepage"
     },
-
     "blog": {
       "title": "Binabox Blog"
     }
@@ -14,49 +13,59 @@
     "subtitle": "EXPLORE NFT COLLECTION",
     "description": "We are the best way to check the rarity of NFT collection",
     "stats": [
-      { "total": "2200+", "label": "Total Item" },
-      { "total": "1000+", "label": "Profiles whitelisted" }
+      {
+        "total": "2200+",
+        "label": "Total Item"
+      },
+      {
+        "total": "1000+",
+        "label": "Profiles whitelisted"
+      }
     ],
     "button_text": "Connect wallet",
-    "link": { "url": "Whitelist", "text": "Whitelist now" },
-    "image": { "src": "#", "alt": "banner-image" }
+    "link": {
+      "url": "Whitelist",
+      "text": "Whitelist now"
+    },
+    "image": {
+      "src": "#",
+      "alt": "banner-image"
+    }
   },
   "icon": "#",
-
   "title": "Catalog",
   "see_all_link": "#",
   "items": [
-      {
-        "image": "#",
-        "label": "New",
-        "price": "$1990",
-        "description": "Echo of Bones"
-      },
-      {
-        "image": "#",
-        "label": "New",
-        "price": "$299.99",
-        "description": "Nyx the watcher"
-      },
-      {
-        "image": "#",
-        "label": "Sold out",
-        "price": "$20",
-        "description": "Blade of silence",
-        "sold_out": true
-      },
-      {
-        "image": "#",
-        "price": "$1,000,000",
-        "description": "Data core:Alpha"
-      },
-      {
-        "image": "#",
-        "price": "$199.5",
-        "description": "Phantom Console"
-      }
-    ],
-
+    {
+      "image": "#",
+      "label": "New",
+      "price": "$1990",
+      "description": "Echo of Bones"
+    },
+    {
+      "image": "#",
+      "label": "New",
+      "price": "$299.99",
+      "description": "Nyx the watcher"
+    },
+    {
+      "image": "#",
+      "label": "Sold out",
+      "price": "$20",
+      "description": "Blade of silence",
+      "sold_out": true
+    },
+    {
+      "image": "#",
+      "price": "$1,000,000",
+      "description": "Data core:Alpha"
+    },
+    {
+      "image": "#",
+      "price": "$199.5",
+      "description": "Phantom Console"
+    }
+  ],
   "title": "Our blog",
   "articles": [
     {
@@ -121,7 +130,6 @@
     }
   ],
   "read_more_url": "#",
-
   "title": "About us",
   "description": "We craft digital artifacts for those who live between worlds...",
   "features": [
@@ -135,62 +143,61 @@
       "title": "Curated Depth",
       "text": "Not just big - meaningful. Each piece tells a story..."
     },
-     {
+    {
       "order": "03",
       "title": "Rare Source Access",
       "text": "Early drops. Backstage peeks our members don't scroll - they unlock."
     },
-     {
+    {
       "order": "04",
       "title": "Living Network",
       "text": "  Our community isn't a list - it's a force. Artise, rebels, dreamers."
     }
   ],
   "read_more_url": "#",
-
   "title": "Our team",
   "members": [
     {
-        "name": "Nova Riven",
-        "image": "#",
-        "speciality": "Creative Architect",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+      "name": "Nova Riven",
+      "image": "#",
+      "speciality": "Creative Architect",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
     {
-        "name": "Echo Zero",
-        "image": "#",
-        "speciality": "Tech Whisperer",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+      "name": "Echo Zero",
+      "image": "#",
+      "speciality": "Tech Whisperer",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
-      {
-        "name": "kairo Null",
-        "image": "#",
-        "speciality": "Lore Engineer",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    {
+      "name": "kairo Null",
+      "image": "#",
+      "speciality": "Lore Engineer",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
-      {
-        "name": "Dr.Wex Omega",
-        "image": "#",
-        "speciality": "Visaul Disruptor",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    {
+      "name": "Dr.Wex Omega",
+      "image": "#",
+      "speciality": "Visaul Disruptor",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
-      {
-        "name": "Synthya Void",
-        "image": "#",
-        "speciality": "UX Seer",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    {
+      "name": "Synthya Void",
+      "image": "#",
+      "speciality": "UX Seer",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
-      {
-        "name": "Mirlo Drift",
-        "image": "#",
-        "speciality": "Community Catalyst",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    {
+      "name": "Mirlo Drift",
+      "image": "#",
+      "speciality": "Community Catalyst",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     },
-      {
-        "name": "Axon Rune",
-        "image": "#",
-        "speciality": "Security Ghost",
-        "socials": ["facebook", "telegram", "linkedin", "instagram"]
+    {
+      "name": "Axon Rune",
+      "image": "#",
+      "speciality": "Security Ghost",
+      "socials": ["facebook", "telegram", "linkedin", "instagram"]
     }
   ],
   "title": "FAQs",
@@ -212,8 +219,5 @@
       "question": "Who are the team behind the project?",
       "open": false
     }
-  ] 
+  ]
 }
-
-
-

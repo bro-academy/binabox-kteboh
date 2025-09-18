@@ -5,9 +5,19 @@
   "banner": {
     "title": "Our blog",
     "breadcrumb": [
-      { "label": "Home", "href":"/home"},
-      { "label": "Our blog", "href":"/blog"},
-      { "label": "The Basilisks NFT", "href": "#", "active": true }
+      {
+        "label": "Home",
+        "href": "/home"
+      },
+      {
+        "label": "Our blog",
+        "href": "/blog"
+      },
+      {
+        "label": "The Basilisks NFT",
+        "href": "#",
+        "active": true
+      }
     ]
   },
   "post": {
@@ -27,10 +37,22 @@
       "The game's AI learns from every move..."
     ],
     "features": [
-      { "label": "Unique DNA structure", "icon": "unique.png" },
-      { "label": "PvP-enable arena", "icon": "pvp.png" },
-      { "label": "Permanent death mode", "icon": "death.png" },
-      { "label": "Metaverse integration", "icon": "metaverse.png" }
+      {
+        "label": "Unique DNA structure",
+        "icon": "unique.png"
+      },
+      {
+        "label": "PvP-enable arena",
+        "icon": "pvp.png"
+      },
+      {
+        "label": "Permanent death mode",
+        "icon": "death.png"
+      },
+      {
+        "label": "Metaverse integration",
+        "icon": "metaverse.png"
+      }
     ],
     "quote": "The first huge metaverse arena...",
     "rating": {
@@ -65,16 +87,22 @@
       },
       {
         "title": "NFT Avatar Generators",
-        "text": [
-          "Looking to join the pack? Use the NFT Avatar Generator..."
-        ]
+        "text": ["Looking to join the pack? Use the NFT Avatar Generator..."]
       }
     ],
     "tags": ["NFT", "Metaverse", "Crypto"],
     "share": ["Twitter", "Facebook", "Instagram"]
   },
   "aside": {
-    "categories": ["Our blog (12)", "Metaverse (24)", "Gaming (24)", "Arts (24)", "Robot (24)", "Lauchpad (24)", "Crypto (430)"],
+    "categories": [
+      "Our blog (12)",
+      "Metaverse (24)",
+      "Gaming (24)",
+      "Arts (24)",
+      "Robot (24)",
+      "Lauchpad (24)",
+      "Crypto (430)"
+    ],
     "tags": ["NFT", "ICO", "Robot", "Crypto", "Lauch", "Metaverse"]
   }
 }
