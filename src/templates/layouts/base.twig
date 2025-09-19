@@ -1,35 +1,17 @@
-<!doctype html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>
-      {% block title %}{{ common.siteTitle }}{% endblock %}
-    </title>
-    <link rel='stylesheet' href='/src/styles/main.scss'>
-  </head>
-  <body>
-    <header>
-      <div class='container'>
-        <h1>
-          {% block header %}<img src='/src/assets/images/logo.svg' alt=''>{% endblock %}
-        </h1>
-      </div>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+	{% include "src/templates/partials/head.twig" %}
+	<body>
 
-    <main>
-      <div class='container'>
-        {% block content %}{% endblock %}
-      </div>
-    </main>
+		{% include "src/templates/partials/layout-header.twig" %}
+		<main>
+			{% block content %}{% endblock %}
+		</main>
+		{% include "src/templates/partials/layout-footer.twig" %}
 
-    <footer>
-      <div class='container'>
-        <p>
-          &copy; {% block year %}2024{% endblock %}
-          {{ common.siteTitle }}. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </body>
+	</body>
+
 </html>
+
+
+{# make it work  #}

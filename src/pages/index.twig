@@ -1,9 +1,13 @@
-{% extends 'src/templates/layouts/base.twig' %}
-
-{% from 'src/templates/partials/ui/icon.twig' import icon %}
-
+{% extends "src/templates/layouts/base.twig" %}
+{% block title %}
+	{{pages.index.title}}
+{% endblock %}
+{% set current_page = "home" %}
 {% block content %}
-  <h1>{{ index.title }}</h1>
-
-  {% include 'src/templates/partials/welcome-section.twig' %}
+	{% include "src/templates/partials/banner.twig" %}
+	{% include "src/templates/partials/product.twig" %}
+	{% include "src/templates/partials/blog.twig" %}
+	{% include "src/templates/partials/company.twig" %}
+	{% include "src/templates/partials/employees.twig" %}
+	{% include "src/templates/partials/overview.twig" %}
 {% endblock %}

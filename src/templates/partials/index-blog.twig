@@ -1,0 +1,23 @@
+<section class="blog">
+	<h2 class="blog__tittle">{{ blog.title }}</h2>
+	<ul class="blog__menu">
+		{% for article in blog.articles %}
+			<li class="blog__item">
+				<article class="blog__item-content">
+					<img src="{{ article.image }}" alt="{{ article.title }}" class="blog__image"/>
+					<span class="blog__label">{{ article.label }}</span>
+					<img src="{{ article.icon }}" alt="icon" class="blog__icon"/>
+					<span class="blog__author">{{ article.author }}</span>
+					<span>|</span>
+					<time datetime="{{ article.date }}" class="blog__date">{{ article.date|date('d M Y') }}</time>
+					<h3 class="blog__subtittle subtittle">{{ article.title }}</h3>
+					<p class="blog__text">{{ article.excerpt }}</p>
+					<a href="{{ article.url }}" class="blog__link link">Read more ></a>
+				</article>
+			</li>
+		{% endfor %}
+	</ul>
+	<a href="{{ blog.read_more_url }}" class="link blog__action">Read more</a>
+</section>
+
+{# make it work  #}
