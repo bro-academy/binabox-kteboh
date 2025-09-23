@@ -1,0 +1,12 @@
+.button {
+  @include button-primary-style;
+}
+
+.link {
+  @include input-with-border-style;
+}
+
+.subtittle {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-normal;
+}

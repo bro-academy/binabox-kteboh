@@ -1,0 +1,16 @@
+body {
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  font-family: $font-family-primary;
+  font-weight: $font-weight-normal;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
