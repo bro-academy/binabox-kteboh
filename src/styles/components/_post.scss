@@ -1,0 +1,60 @@
+.post {
+  &__caption {
+    font-weight: $font-weight-medium;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+  }
+  
+  &__tittle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-3xl);
+    letter-spacing: -0.5px;
+  }
+  
+  &__quote {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-2xl);
+  }
+  
+  &__subtittle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-2xl);
+  }
+  
+  &__address,
+  &__date {
+    font-weight: $font-weight-semibold;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+  }
+  
+  &__quote {
+    &--background {
+      background-color: var(--qoute-bg-color);
+    }
+  }
+  
+  &__rating {
+    background-color: var(--qoute-bg-color);
+    font-weight: $font-weight-semibold;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+  }
+  
+  &__info {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+  }
+  
+  &__text {
+    &--color {
+      color: var(--label-color);
+    }
+  }
+}
