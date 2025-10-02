@@ -1,20 +1,27 @@
 <footer class="footer">
-	<a href="#" class="footer__logo"><img src="{{ footer.logo }}" alt="BINABOX"/></a>
+	<a href="{{ footer.logo.href }}" class="footer__logo">
+		<img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}"/>
+	</a>
+
 	<p class="footer__text">{{ footer.description }}</p>
-	<h2 class="footer__navigation">{{footer.title}}</h2>
+
+	<h2 class="footer__navigation">{{ footer.navigation_title }}</h2>
 	<ul class="footer__items">
-		{% for item in footer.navigation %}
+		{% for item in footer.navigation_links %}
 			<li class="footer__item">
 				<a href="{{ item.href }}">{{ item.text }}</a>
 			</li>
 		{% endfor %}
 	</ul>
+
 	<hr class="footer__divider"/>
+
 	<p class="footer__text">{{ footer.copyright }}</p>
+
 	<ul class="footer__socials">
 		{% for social in footer.socials %}
 			<li class="footer__directories">
-				<a href="{{ social.href }}">{{ social.label }}</a>
+				<a href="{{ social.href }}">{{ social.name }}</a>
 			</li>
 		{% endfor %}
 	</ul>

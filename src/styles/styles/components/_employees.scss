@@ -1,0 +1,27 @@
+.employees {
+  &__tittle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    @include large-centered-title;
+  }
+
+  &__list {
+    display: flex;
+    max-width: 1600px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: var(--secondary-bg-color);
+    padding: 32px;
+  }
+
+  &__name {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-xl);
+    text-align: center;
+    text-transform: capitalize;
+  }
+}

@@ -1,17 +1,22 @@
-  {
-        "banner": {
-        "title": "WITH",
-        "highlight": "BINABOX",
-        "subtitle": "EXPLORE NFT COLLECTION",
-        "description": "We are the best way to check the rarity of NFT collection",
-        "stats": [
-          { "total": "2200+", "label": "Total Item" },
-          { "total": "1000+", "label": "Profiles whitelisted" }
-        ],
-        "button_text": "Connect wallet",
-        "link": { "url": "Whitelist", "text": "Whitelist now" },
-        "image": { "src": "#", "alt": "banner-image" }
-    }
-}
+<section class="banner">
+	<h1 class="banner__tittle">
+		WITH
+		<span class="banner__action banner__action--color">{{ banner.action }}</span>
+		{{ banner.title }}
+	</h1>
+	<p class="banner__description">{{ banner.description }}</p>
+
+	<dl class="banner__list">
+		{% for stat in banner.stats %}
+			<dt class="banner__total">{{ stat.value }}</dt>
+			<dd class="banner__item">{{ stat.label }}</dd>
+		{% endfor %}
+	</dl>
+
+	<button class="banner__button button">{{ banner.button_text }}</button>
+	<a href="{{ banner.link.href }}" class="banner__link link banner__link--frame">{{ banner.link.text }}</a>
+	<img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__image"/>
+</section>
+
 
 {# make it work  #}

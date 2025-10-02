@@ -1,0 +1,26 @@
+.company {
+  &__description {
+    font-weight: $font-weight-medium;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-lg);
+  }
+
+  &__tittle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    @include large-centered-title;
+  }
+
+  &__subtittle {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-xl);
+  }
+
+  &__item {
+    background-color: var(--secondary-bg-color);
+  }
+
+  &__action {
+    @include centered-action-button;
+  }
+}
