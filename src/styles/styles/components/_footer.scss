@@ -1,0 +1,19 @@
+.footer {
+  &__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+  }
+
+  &__navigation {
+    font-weight: $font-weight-medium;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-lg);
+  }
+
+  &__item {
+    font-family: $font-family-primary;
+    font-weight: $font-weight-semibold;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+  }
+}

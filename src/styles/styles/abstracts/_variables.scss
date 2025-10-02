@@ -1,0 +1,74 @@
+$primary-color: #f8f7ff;
+$main-bg-color: #0d0d15;
+$secondary-bg-color: #1d1c28;
+$qoute-bg-color: #002754;
+$button-bg-color: #0265dc;
+$button-color: #f5f8fb;
+$label-modifier-color: #ea3829;
+$label-primary-color: #f5f8fb;
+$link-border-color: #d0d7fb2b;
+$label-bg-color: #f5f8fb;
+$label-color: #0265dc;
+$text-muted: #9da2aa;
+
+$font-family-primary: "Poppins", sans-serif;
+$font-family-heading: "Bakbak One", sans-serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 28px;
+$font-size-4xl: 36px;
+$font-size-5xl: 48px;
+$font-size-6xl: 52px;
+
+$line-height-xs: 16px;
+$line-height-sm: 20px;
+$line-height-base: 24px;
+$line-height-lg: 28px;
+$line-height-xl: 32px;
+$line-height-2xl: 36px;
+$line-height-3xl: 48px;
+$line-height-4xl: 62px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+:root {
+  --primary-color: #{$primary-color};
+  --main-bg-color: #{$main-bg-color};
+  --secondary-bg-color: #{$secondary-bg-color};
+  --qoute-bg-color: #{$qoute-bg-color};
+  --button-bg-color: #{$button-bg-color};
+  --button-color: #{$button-color};
+  --label-modifier-color: #{$label-modifier-color};
+  --label-primary-color: #{$label-primary-color};
+  --link-border-color: #{$link-border-color};
+  --label-bg-color: #{$label-bg-color};
+  --label-color: #{$label-color};
+  --text-muted: #{$text-muted};
+
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-base: #{$font-size-base};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+  --font-size-4xl: #{$font-size-4xl};
+  --font-size-5xl: #{$font-size-5xl};
+  --font-size-6xl: #{$font-size-6xl};
+
+  --line-height-xs: #{$line-height-xs};
+  --line-height-sm: #{$line-height-sm};
+  --line-height-base: #{$line-height-base};
+  --line-height-lg: #{$line-height-lg};
+  --line-height-xl: #{$line-height-xl};
+  --line-height-2xl: #{$line-height-2xl};
+  --line-height-3xl: #{$line-height-3xl};
+  --line-height-4xl: #{$line-height-4xl};
+}
