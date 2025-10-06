@@ -1,18 +1,23 @@
 <section class="overview">
-	<h2 class="overview__tittle">{{ faq.title }}</h2>
-	{% for item in faq.items %}
-		<details class="overview__item" {% if item.open %} open {% endif %}>
-			<summary class="overview__question">{{ item.question }}</summary>
-			<span>
-				{% if item.open %}&minus;{% else %}&plus;
-				{% endif %}
-			</span>
-			{% if item.answer %}
+	<h2 class="overview__tittle">{{ overview.title }}</h2>
+
+	{% for faq in overview.faqs %}
+		<details class="overview__item" {% if faq.open %} open {% endif %}>
+			<summary class="overview__question">{{ faq.question }}</summary>
+			<span>{{ faq.open ? '−' : '+' }}</span>
+
+			{% if faq.answer %}
 				<hr class="overview__divider"/>
-				<p class="overview__answer">{{ item.answer|raw }}</p>
+				<p class="overview__answer">
+					{% if faq.term %}
+						<span class="overview__term overview__term--color">{{ faq.term }}</span>
+					{% endif %}
+					{{ faq.answer }}
+				</p>
 			{% endif %}
 		</details>
 	{% endfor %}
 </section>
+
 
 {# make it work  #}

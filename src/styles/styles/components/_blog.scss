@@ -1,0 +1,38 @@
+.blog {
+  &__tittle {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-normal;
+    @include large-centered-title;
+  }
+
+  &__item {
+    background-color: var(--secondary-bg-color);
+  }
+
+  &__label {
+    @include product-label-style;
+  }
+
+  &__author,
+  &__date {
+    font-weight: $font-weight-semibold;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    text-transform: uppercase;
+  }
+
+  &__subtittle {
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-3xl);
+    letter-spacing: -0.5px;
+  }
+
+  &__description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+  }
+
+  &__action {
+    @include centered-action-button;
+  }
+}
