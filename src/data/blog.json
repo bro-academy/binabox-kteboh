@@ -2,24 +2,22 @@
   "page": {
     "title": "OUR BLOG"
   },
-  "banner": {
-    "title": "Our blog",
-    "breadcrumb": [
-      {
-        "label": "Home",
-        "href": "/home"
-      },
-      {
-        "label": "Our blog",
-        "href": "/blog"
-      },
-      {
-        "label": "The Basilisks NFT",
-        "href": "#",
-        "active": true
-      }
-    ]
-  },
+  "title": "Our blog",
+  "breadcrumbs": [
+    {
+      "label": "Home",
+      "href": "/home"
+    },
+    {
+      "label": "Our blog",
+      "href": "/blog"
+    },
+    {
+      "label": "The Basilisks NFT",
+      "href": "/basilisks",
+      "highlight": true
+    }
+  ],
   "post": {
     "title": "The Basilisks NFT",
     "category": "Gaming",
@@ -87,11 +85,21 @@
       },
       {
         "title": "NFT Avatar Generators",
-        "text": ["Looking to join the pack? Use the NFT Avatar Generator..."]
+        "text": [
+          "Looking to join the pack? Use the NFT Avatar Generator..."
+        ]
       }
     ],
-    "tags": ["NFT", "Metaverse", "Crypto"],
-    "share": ["Twitter", "Facebook", "Instagram"]
+    "tags": [
+      "NFT",
+      "Metaverse",
+      "Crypto"
+    ],
+    "share": [
+      "Twitter",
+      "Facebook",
+      "Instagram"
+    ]
   },
   "aside": {
     "categories": [
@@ -103,6 +111,13 @@
       "Lauchpad (24)",
       "Crypto (430)"
     ],
-    "tags": ["NFT", "ICO", "Robot", "Crypto", "Lauch", "Metaverse"]
+    "tags": [
+      "NFT",
+      "ICO",
+      "Robot",
+      "Crypto",
+      "Lauch",
+      "Metaverse"
+    ]
   }
 }

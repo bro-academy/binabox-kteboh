@@ -16,8 +16,11 @@ a {
 }
 .button {
   @include button-primary-style;
-}
 
+  &:hover {
+    background-color: red;
+  }
+}
 .link {
   @include input-with-border-style;
 }
