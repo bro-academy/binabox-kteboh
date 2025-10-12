@@ -27,12 +27,21 @@
       "dateFormatted": "20 Jun 2022",
       "icon": "tony-icon.png"
     },
-    "highlight": "Basilisks",
-    "intro": "aren't just creatures - they're digital apex predators...",
-    "details": [
-      "In this game, your Basilisk is your warrior...",
-      "Each NFT Basilisk has a set of traits...",
-      "The game's AI learns from every move..."
+    "intro_paragraph": {
+      "highlight_text": "Basilisks",
+      "highlight_class": "post__highlight",
+      "text_after": "aren't just creatures - they're digital apex predators. Forged on the Ethereum chain and raised in a metaverse colosseum, they live to dominate, duel, and devour. Every one of them is an NFT with unique DNA, traits, and bloodlust."
+    },
+    "bullet_points": [
+      {
+        "text": "In this game, your Basilisk is your worrior. You breed it. You name it. You train it. And when you're ready, you send it in to the arena - not to play but to survive."
+      },
+      {
+        "text": "Each NFT Basilisk has a set of traits, mutation and skills, minted immutable on-chain. The arena? A fully 3D metaverse battleground with wagers, livestreams, and faction wars. Players don't just watch - they stake tokens, call hits, and climb leaderboards."
+      },
+      {
+        "text": "The game's AI learns from every move. If your Basilisk gets too strong - it becomes a target. If it dies? It's burned forever. If it wins? You earn crypto, glory and power."
+      }
     ],
     "features": [
       {
@@ -75,21 +84,20 @@
         "caption": "A bonded Basilisk with its summoner..."
       }
     ],
-    "subsections": [
-      {
-        "title": "NFTs are digital assets that represent real-world objects",
-        "text": [
-          "Setting up your avatar and personalizing your nickname on Binance...",
-          "Alternatively, if you're on nft.binance.com..."
-        ]
+    "nft_intro": {
+      "title": "NFTs are digital assets that represent real-world objects",
+      "paragraph_1": "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
+      "paragraph_2": "Alternatively, if you're on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you'll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem."
+    },
+    "avatar_generator": {
+      "title": "NFT Avatar Generators",
+      "text": "Looking to join the pack?",
+      "link": {
+        "url": "#",
+        "label": "NFT Avatar Generator"
       },
-      {
-        "title": "NFT Avatar Generators",
-        "text": [
-          "Looking to join the pack? Use the NFT Avatar Generator..."
-        ]
-      }
-    ],
+      "call_to_action": "to create your beast – or grab a rare egg on the marketplace. You name it. You own it. You unleash it."
+    },
     "tags": [
       "NFT",
       "Metaverse",

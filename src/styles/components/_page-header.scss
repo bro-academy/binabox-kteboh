@@ -1,6 +1,9 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 .page-header {
   &__link-primary {
     @include navigation-link-style;
+    
 
     &--active {
       border-bottom: 2px solid var(--button-bg-color);
