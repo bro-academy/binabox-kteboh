@@ -1,0 +1,20 @@
+{
+    "page": {
+        "title": "Explore catalog"
+    },
+    "title": "Explore catalog",
+    "breadcrumbs": {
+        "title": "Explore catalog",
+        "title_class": "breadcrumbs__title--action",
+        "items": [
+            {
+                "text": "Home |",
+                "url": "/home"
+            },
+            {
+                "text": "catalog",
+                "url": "/catalog"
+            }
+        ]
+    }
+}
