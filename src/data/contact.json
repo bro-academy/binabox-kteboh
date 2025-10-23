@@ -33,5 +33,9 @@
             "title": "Phone",
             "text": "+1 666 8888"
         }
-    ]
+    ],
+    "description": {
+        "title": "Get in touch",
+        "text": "Browse through the most frequently asked questions"
+    }
 }
