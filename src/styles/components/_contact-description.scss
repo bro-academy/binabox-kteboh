@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.description{
+    &__title {
+    font-family: Bakbak One;
+    font-size: $font-size-4xl;
+    line-height: $line-height-3xl;
+    letter-spacing: -0.5px;
+    text-align: center;
+    }
+
+    &__text {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-xl;
+        text-align: center;
+    }
+}
