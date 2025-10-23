@@ -1,0 +1,53 @@
+<section class="hero">
+
+	<div class="hero__nav">
+		<h2 class="hero__title">{{ hero.title }}</h2>
+
+		<form action="{{ hero.form.action }}" method="{{ hero.form.method }}" class="hero__form">
+			<select name="{{ hero.form.select.name }}" id="{{ hero.form.select.id }}" class="hero__select">
+				{% for option in hero.form.select.options %}
+					<option value="{{ option.value }}" class="{{ option.class }}">{{ option.label }}</option>
+				{% endfor %}
+			</select>
+
+			<label for="{{ hero.form.search.id }}" class="hero__form-label">
+				<input type="text" name="{{ hero.form.search.name }}" id="{{ hero.form.search.id }}" placeholder="{{ hero.form.search.placeholder }}" pattern="{{ hero.form.search.pattern }}" class="hero__input">
+			</label>
+		</form>
+	</div>
+
+	<div class="hero__actions">
+		{% for link in hero.actions %}
+			<a href="{{ link.url }}" class="{{ link.class }}">{{ link.label }}</a>
+		{% endfor %}
+		<button type="reset" class="hero__button hero__button-reset">{{ hero.reset_text }}</button>
+	</div>
+
+	<div class="hero__card-wrapper">
+		{% for card in hero.cards %}
+			<div class="hero__cards">
+				<article class="hero__content">
+					<img src="{{ card.image.src }}" alt="{{ card.image.alt }}" class="hero__image"/>
+					<span class="hero__label {{ card.label_class|default('') }}">{{ card.label }}</span>
+					<span class="hero__price">{{ card.price }}</span>
+					<h3 class="hero__card-title">{{ card.title }}</h3>
+
+					{% if card.buttons is defined %}
+						<div class="hero__centered-button">
+							{% for button in card.buttons %}
+								{% if button.type == 'button' %}
+									<button type="submit" class="{{ button.class }}">{{ button.label }}</button>
+								{% else %}
+									<a href="{{ button.url }}" class="{{ button.class }}">{{ button.label }}</a>
+								{% endif %}
+							{% endfor %}
+						</div>
+					{% endif %}
+				</article>
+			</div>
+		{% endfor %}
+	</div>
+
+	<a href="{{ hero.load_more.url }}" class="{{ hero.load_more.class }}">{{ hero.load_more.label }}</a>
+
+</section>

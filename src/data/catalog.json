@@ -208,5 +208,169 @@
                 ]
             }
         ]
+    },
+    "hero": {
+        "title": "All item",
+        "form": {
+            "action": "submit",
+            "method": "post",
+            "select": {
+                "name": "sort",
+                "id": "sort",
+                "options": [
+                    {
+                        "value": "sort-by",
+                        "label": "Sort by",
+                        "class": "hero__option-sort"
+                    },
+                    {
+                        "value": "newest",
+                        "label": "Newest",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "most popular",
+                        "label": "Most popular",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "increasing in price",
+                        "label": "Increasing in price",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "lowering the price",
+                        "label": "Lowering the price",
+                        "class": "hero__option"
+                    }
+                ]
+            },
+            "search": {
+                "name": "search-nft",
+                "id": "search_nft",
+                "placeholder": "search NFT",
+                "pattern": "[A-Za-z0-9]+"
+            }
+        },
+        "actions": [
+            {
+                "label": "NFR",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            },
+            {
+                "label": "ICO",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            },
+            {
+                "label": "Crypto",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            }
+        ],
+        "reset_text": "Clear all",
+        "cards": [
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product",
+                "buttons": [
+                    {
+                        "type": "button",
+                        "class": "button hero__centered-favourite",
+                        "label": "Favourites"
+                    },
+                    {
+                        "type": "link",
+                        "url": "#",
+                        "class": "button hero__centered-buy",
+                        "label": "Buy"
+                    }
+                ]
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "Sold out",
+                "label_class": "hero__label--sold-out",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            }
+        ],
+        "load_more": {
+            "label": "Load more",
+            "url": "#",
+            "class": "hero__pages secondary-button"
+        }
     }
 }
