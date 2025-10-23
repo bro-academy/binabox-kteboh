@@ -1,0 +1,142 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.hero {
+    &__title {
+        font-family: 'Bakbak One', sans-serif;
+        color: var(--primary-color);
+        font-size: $font-size-4xl;
+        line-height: $line-height-3xl;
+        letter-spacing: -0.5px;
+    }
+    &__select {
+        width: 145px;
+        height: 48px;
+        opacity: 1;
+        padding: 10px 24px;
+        border-width: 2px;
+        border: 2px solid $button-bg-color;
+        background-color: var(--main-bg-color);
+        color: var(--text-color);
+    }
+    &__option-sort {
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-lg;
+        line-height: $line-height-lg;
+    }
+
+    &__input {
+        width: 423.5px;
+        height: 48px;
+        min-width: 160px;
+        opacity: 1;
+        padding: 8px 12px;
+        background: #1A1925;
+        border: 2px solid var(--link-border-color);
+        color: var(--text-color);
+    }
+
+    &__actions {
+        width: 1024px;
+        height: 64px;
+        padding: 16px;
+        opacity: 1;
+        background: $secondary-bg-color;
+    }
+    &__link {
+        width: 74px;
+        height: 32px;
+        opacity: 1;
+        padding: 6px 12px;
+        border-width: 2px;
+        border: 2px solid var(--link-border-color);
+        font-weight: $font-weight-semibold;
+    }
+
+    &__button {
+        width: 84px;
+        height: 32px;
+        opacity: 1;
+        padding: 6px 12px;
+        background: #FFFFFF;
+        font-weight: $font-weight-semibold;
+        color: $main-bg-color;
+    }
+    &__button-reset:hover {
+        background: #F4F7FA;
+    }
+
+    &__button-reset:active {
+        background: #E5ECFB5C;
+    }
+
+    &__button-reset:focus {
+        background: #FFFFFF;
+        border: 4px solid #3892F3;
+    }
+
+    &__button-reset:disabled {
+        background: #D0D7FB2B;
+    }
+    &__label {
+       @include product-label-style;
+        width: 51px;
+        height: 36px;
+        opacity: 1;
+        padding: 8px 10px;
+    }
+    &__label--sold-out {
+        width: 78px;
+        height: 36px;
+        opacity: 1;
+        padding: 8px 10px;
+        background: var(--label-modifier-color);
+        color: var(--text-color);
+
+    }
+    &__price {
+        font-family: 'Bakbak One', sans-serif;
+        font-size: $font-size-4xl;
+        line-height: $line-height-3xl;
+        letter-spacing: -0.5px;
+    }
+
+    &__card-title {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-xl;
+        line-height: $line-height-lg;
+        color: #EFF5FAD1;
+    }
+
+    &__centered-fovourite {
+        @include button-primary-style;
+        width: 240px;
+        height: 52px;
+        opacity: 1;
+        padding: 12px 24px;
+        background: #FFFFFF;
+        font-weight: $font-weight-semibold;
+        color: var(--main-bg-color);
+    }
+    &__centered-buy {
+        width: 240px;
+        height: 48px;
+        opacity: 1;
+        padding: 10px 24px;
+        background: var(--button-bg-color);
+        font-weight: $font-weight-semibold;
+        color: var(--text-color);
+        display: block;
+        text-align: center;
+    }
+
+    &__pages {
+        width: 1024px;
+        height: 48px;
+        opacity: 1;
+        font-weight: $font-weight-semibold;
+        padding: 10px 24px;
+        border: 2px solid var(--link-border-color);
+        display: block;
+        text-align: center;
+    }
+}

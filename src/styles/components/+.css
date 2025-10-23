@@ -2,6 +2,8 @@
 @import "./_banner.scss";
 @import "./_blog.scss";
 @import "./_breadcrumbs.scss";
+@import "./_catalog-hero.scss";
+@import "./_catalog-sidebar.scss";
 @import "./_company.scss";
 @import "./_contact-adress.scss";
 @import "./_contact-description.scss";
