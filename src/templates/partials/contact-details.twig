@@ -3,15 +3,22 @@
 		<fieldset
 			class="details__alignment">
 
-			{# Loop through all input fields #}
+			{# Loop through form fields dynamically #}
 			{% for field in form.fields %}
-				<p class="details__text">
-					{% if field.type != 'radio' and field.type != 'checkbox' and field.type != 'textarea' %}
+				<p
+					class="details__text">
+					{# Text, Email, Date, Tel inputs #}
+					{% if field.type in ['text', 'email', 'date', 'tel'] %}
 						<label for="{{ field.id }}" class="details__label">{{ field.label }}</label>
-						<input type="{{ field.type }}" name="{{ field.name }}" id="{{ field.id }}" placeholder="{{ field.placeholder|default('') }}" pattern="{{ field.pattern|default('') }}" {% if field.required %} required {% endif %} class="details__input">
+						<input
+						type="{{ field.type }}" name="{{ field.name }}" id="{{ field.id }}" placeholder="{{ field.placeholder|default('') }}" pattern="{{ field.pattern|default('') }}" {% if field.required %} required {% endif %} class="details__input">
+
+						{# Textarea field #}
 					{% elseif field.type == 'textarea' %}
 						<label for="{{ field.id }}" class="details__label">{{ field.label }}</label>
 						<textarea id="{{ field.id }}" name="{{ field.name }}" rows="{{ field.rows|default(5) }}" cols="{{ field.cols|default(30) }}" placeholder="{{ field.placeholder|default('') }}" {% if field.required %} required {% endif %} class="details__textarea"></textarea>
+
+						{# Radio group #}
 					{% elseif field.type == 'radio-group' %}
 						<p class="details__text">{{ field.label }}</p>
 						{% for option in field.options %}
@@ -20,11 +27,12 @@
 								<label for="{{ option.id }}" class="details__label">{{ option.label }}</label>
 							</p>
 						{% endfor %}
+
+						{# Checkbox #}
 					{% elseif field.type == 'checkbox' %}
 						<input type="checkbox" id="{{ field.id }}" name="{{ field.name }}" {% if field.required %} required {% endif %} class="details__checkbox visually-hidden">
-						<label for="{{ field.id }}">
-							{{ field.label|raw }}
-						</label>
+
+						<label for="{{ field.id }}">{{ field.label|raw }}</label>
 					{% endif %}
 				</p>
 			{% endfor %}

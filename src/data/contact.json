@@ -118,7 +118,7 @@
                 "type": "checkbox",
                 "id": "terms-checkbox",
                 "name": "terms-checkbox",
-                "label": "By clicking on the ‘Send Message’ button I agree to <a href='#'>all the terms of the security policy</a>",
+                "label": "By clicking on the ‘Send Message’ button I agree to <a href='#' class='details__link'>all the terms of the security policy</a>",
                 "required": true
             }
         ]

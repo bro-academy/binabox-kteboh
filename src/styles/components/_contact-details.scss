@@ -84,4 +84,12 @@
         font-size: $font-size-sm;
         line-height: $line-height-sm;
     }
+    &__link {
+       color: #78BBFA;
+
+    }
+    &__text {
+        font-size: $font-size-sm;
+        line-height:$line-height-sm;
+    }
 }
