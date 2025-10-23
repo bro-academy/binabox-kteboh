@@ -5,6 +5,9 @@
     },
     "blog": {
       "title": "Binabox Blog"
+    },
+    "contact": {
+      "title": "Contact Us"
     }
   },
   "banner": {

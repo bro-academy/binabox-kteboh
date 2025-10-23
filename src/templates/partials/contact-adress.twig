@@ -1,0 +1,11 @@
+<section class="address">
+	<div class="address__wrapper">
+		{% for item in address_items %}
+			<div class="address item">
+				<img src="{{ item.icon }}" alt="{{ item.alt }}" class="address__icon"/>
+				<h2 class="address__title">{{ item.title }}</h2>
+				<p class="address__text">{{ item.text }}</p>
+			</div>
+		{% endfor %}
+	</div>
+</section>

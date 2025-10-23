@@ -1,0 +1,9 @@
+{% extends "src/templates/layouts/base.twig" %}
+{% block title %}
+	{{pages.contact.title}}
+{% endblock %}
+{% set current_page = "contact" %}
+{% block content %}
+	{% include "src/templates/partials/contact-breadcrumbs.twig" %}
+	{% include "src/templates/partials/contact-adress.twig" %}
+{% endblock %}
