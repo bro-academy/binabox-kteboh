@@ -90,3 +90,19 @@ a {
   font-family: $font-family-heading;
   font-weight: $font-weight-normal;
 }
+
+// for checkboxes and radios
+.visually-hidden {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+/* validators */
+input:user-invalid {
+    background-color: red;
+}
+input:user-valid {
+    background-color: green;
+}
