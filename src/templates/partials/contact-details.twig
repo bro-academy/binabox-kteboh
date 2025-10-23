@@ -1,0 +1,35 @@
+<section class="details">
+	<form action="{{ form.action }}" method="{{ form.method }}" class="details__form">
+		<fieldset
+			class="details__alignment">
+
+			{# Loop through all input fields #}
+			{% for field in form.fields %}
+				<p class="details__text">
+					{% if field.type != 'radio' and field.type != 'checkbox' and field.type != 'textarea' %}
+						<label for="{{ field.id }}" class="details__label">{{ field.label }}</label>
+						<input type="{{ field.type }}" name="{{ field.name }}" id="{{ field.id }}" placeholder="{{ field.placeholder|default('') }}" pattern="{{ field.pattern|default('') }}" {% if field.required %} required {% endif %} class="details__input">
+					{% elseif field.type == 'textarea' %}
+						<label for="{{ field.id }}" class="details__label">{{ field.label }}</label>
+						<textarea id="{{ field.id }}" name="{{ field.name }}" rows="{{ field.rows|default(5) }}" cols="{{ field.cols|default(30) }}" placeholder="{{ field.placeholder|default('') }}" {% if field.required %} required {% endif %} class="details__textarea"></textarea>
+					{% elseif field.type == 'radio-group' %}
+						<p class="details__text">{{ field.label }}</p>
+						{% for option in field.options %}
+							<p class="details__text">
+								<input type="radio" name="{{ field.name }}" id="{{ option.id }}" value="{{ option.value }}" {% if option.checked %} checked {% endif %} class="details__radio visually-hidden">
+								<label for="{{ option.id }}" class="details__label">{{ option.label }}</label>
+							</p>
+						{% endfor %}
+					{% elseif field.type == 'checkbox' %}
+						<input type="checkbox" id="{{ field.id }}" name="{{ field.name }}" {% if field.required %} required {% endif %} class="details__checkbox visually-hidden">
+						<label for="{{ field.id }}">
+							{{ field.label|raw }}
+						</label>
+					{% endif %}
+				</p>
+			{% endfor %}
+
+			<button type="submit" class="button details__button">{{ form.submit_text }}</button>
+		</fieldset>
+	</form>
+</section>

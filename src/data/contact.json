@@ -37,5 +37,90 @@
     "description": {
         "title": "Get in touch",
         "text": "Browse through the most frequently asked questions"
+    },
+    "form": {
+        "action": "submit",
+        "method": "get",
+        "submit_text": "Send message",
+        "fields": [
+            {
+                "type": "text",
+                "label": "Name",
+                "name": "name",
+                "id": "name",
+                "placeholder": "Enter your name",
+                "pattern": "^[A-Za-z]+$",
+                "required": true
+            },
+            {
+                "type": "text",
+                "label": "Last name",
+                "name": "last-name",
+                "id": "last-name",
+                "placeholder": "Enter your last name",
+                "pattern": "^[A-Za-z]+$",
+                "required": true
+            },
+            {
+                "type": "date",
+                "label": "Date of birth",
+                "name": "date",
+                "id": "date",
+                "required": true
+            },
+            {
+                "type": "radio-group",
+                "label": "Sex",
+                "name": "sex",
+                "options": [
+                    {
+                        "id": "male",
+                        "value": "male",
+                        "label": "Male",
+                        "checked": true
+                    },
+                    {
+                        "id": "female",
+                        "value": "female",
+                        "label": "Female"
+                    }
+                ]
+            },
+            {
+                "type": "email",
+                "label": "Email",
+                "name": "email",
+                "id": "email",
+                "placeholder": "Enter your email",
+                "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                "required": true
+            },
+            {
+                "type": "tel",
+                "label": "Phone number",
+                "name": "phone-number",
+                "id": "phone-number",
+                "placeholder": "Enter your number",
+                "pattern": "^\\+357\\d{8}$",
+                "required": true
+            },
+            {
+                "type": "textarea",
+                "label": "Message",
+                "name": "message",
+                "id": "message",
+                "placeholder": "Text your message here...",
+                "rows": 5,
+                "cols": 30,
+                "required": true
+            },
+            {
+                "type": "checkbox",
+                "id": "terms-checkbox",
+                "name": "terms-checkbox",
+                "label": "By clicking on the ‘Send Message’ button I agree to <a href='#'>all the terms of the security policy</a>",
+                "required": true
+            }
+        ]
     }
 }
