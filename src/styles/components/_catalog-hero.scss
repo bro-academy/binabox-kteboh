@@ -50,6 +50,8 @@
         border-width: 2px;
         border: 2px solid var(--link-border-color);
         font-weight: $font-weight-semibold;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
     }
 
     &__button {
