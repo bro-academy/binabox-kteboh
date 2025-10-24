@@ -106,3 +106,27 @@ input:user-invalid {
 input:user-valid {
     background-color: green;
 }
+
+
+// buttons in catalog-hero component
+.secondary-button {
+  &:hover {
+      background: #BFC5EE1F;
+      border: 2px solid #BFC5EE1F
+  }
+
+  &:active {
+      background: #BFC5EE1F;
+      border: 2px solid #BFC5EE1F
+  }
+
+  &:focus {
+      background: #BFC5EE1F;
+      border: 4px solid #3892F3;
+  }
+
+  &:disabled {
+      background: #D0D7FB2B;
+      border: 2px solid #E5ECFB5C;
+  }
+}
