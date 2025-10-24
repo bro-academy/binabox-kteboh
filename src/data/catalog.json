@@ -291,13 +291,13 @@
                 "buttons": [
                     {
                         "type": "button",
-                        "class": " button hero__centered-favourite",
+                        "class": "button hero__centered-favourite",
                         "label": "Favourites"
                     },
                     {
                         "type": "link",
                         "url": "#",
-                        "class": " button hero__centered-buy",
+                        "class": "button hero__centered-buy",
                         "label": "Buy"
                     }
                 ]
