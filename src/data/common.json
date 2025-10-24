@@ -8,20 +8,20 @@
     "menu": [
       {
         "label": "Home",
-        "url": "#",
+        "url": "/",
         "active": true
       },
       {
         "label": "Blog",
-        "url": "#"
+        "url": "/blog"
       },
       {
         "label": "Catalog",
-        "url": "#"
+        "url": "/catalog"
       },
       {
         "label": "Contact Us",
-        "url": "#"
+        "url": "/contact"
       }
     ],
     "searchPlaceholder": "Search",

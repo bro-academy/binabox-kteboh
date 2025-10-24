@@ -17,15 +17,18 @@
 	</p>
 
 	<p class="post__text">
-		<span class="post__text post__text--color">{{ post.highlight }}</span>
-		{{ post.intro }}
+		<span class="{{ post.intro_paragraph.highlight_class }}">{{ post.intro_paragraph.highlight_text }}</span>
+		{{ post.intro_paragraph.text_after }}
 	</p>
 
 	<ul class="post__menu">
-		{% for paragraph in post.details %}
-			<li class="post__item">{{ paragraph }}</li>
+		{% for item in post.bullet_points %}
+			<li class="post__item">
+				{{ item.text }}
+			</li>
 		{% endfor %}
 	</ul>
+
 
 	<ul class="post__logos">
 		{% for logo in post.features %}
@@ -45,12 +48,27 @@
 		{{ post.rating.source }}
 	</span>
 
-	{% for sub in post.subsections %}
-		<h3 class="post__subtittle">{{ sub.title }}</h3>
-		{% for para in sub.text %}
-			<p class="post__text">{{ para }}</p>
-		{% endfor %}
-	{% endfor %}
+	<section class="post">
+		<h3 class="post__subtittle">{{ post.nft_intro.title }}</h3>
+		<p class="post__text">
+			{{ post.nft_intro.paragraph_1 }}
+		</p>
+		<p class="post__text">
+			{{ post.nft_intro.paragraph_2 }}
+		</p>
+
+		<h3 class="post__subtittle">{{ post.avatar_generator.title }}</h3>
+		<p class="post__text">
+			{{ post.avatar_generator.text }}
+			<br class="post__line-break"/>
+			<span class="post__highlight">
+				<a href="{{ post.avatar_generator.link.url }}" class="post__link post__link--color">
+					{{ post.avatar_generator.link.label }}
+				</a>
+			</span>
+			{{ post.avatar_generator.call_to_action }}
+		</p>
+	</section>
 
 	<p class="post__info">Tags:</p>
 	<ul class="post__info-menu">
