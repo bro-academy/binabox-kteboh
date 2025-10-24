@@ -1,3 +1,4 @@
+{% import 'ui/picture.twig' as macros %}
 <section class="banner">
 	<h1 class="banner__tittle">
 		WITH
@@ -15,7 +16,21 @@
 
 	<button class="banner__button button">{{ banner.button_text }}</button>
 	<a href="{{ banner.link.href }}" class="banner__link link banner__link--frame">{{ banner.link.text }}</a>
-	<img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__image"/>
+	{# <img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__image"/> #}
+
+
+	{% set pictureData = {
+  sourcePathway: [
+    { srcset: '/banner/banner-cube.avif', type: 'avif' },
+    { srcset: '/banner/banner-cube.webp', type: 'webp' },
+    { srcset: '/banner/banner-cube.jpg', type: 'jpeg' }
+  ],
+  imgPath: '/banner/banner-cube.png',
+  alt: 'Banner Cube'
+} %}
+
+	{{ macros.picture(pictureData, 'banner__image', '534', '640') }}
+
 </section>
 
 

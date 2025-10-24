@@ -1,0 +1,8 @@
+{% macro picture(data, class, width, height) %}
+	<picture class="{{ class }}">
+		{% for source in data.sourcePathway %}
+			<source srcset="{{ source.srcset }}" type="image/{{ source.type }}">
+		{% endfor %}
+		<img src="{{ data.imgPath }}" alt="{{ data.alt }}" width="{{ width }}" height="{{ height }}" class="{{ class }}">
+	</picture>
+{% endmacro %}

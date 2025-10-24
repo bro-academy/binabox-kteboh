@@ -32,9 +32,26 @@
       "href": "Whitelist",
       "text": "Whitelist now"
     },
-    "image": {
-      "src": "#",
-      "alt": "banner-image"
+    "picture": {
+      "sourcePathway": [
+        {
+          "srcset": "/banner/banner-cube.avif",
+          "type": "png"
+        },
+        {
+          "srcset": "/banner/banner-cube.webp",
+          "type": "webp"
+        },
+        {
+          "srcset": "/banner/banner-cube.jpg",
+          "type": "jpg"
+        }
+      ],
+      "imgPath": "/banner/banner-cube.png",
+      "alt": "Banner Cube",
+      "width": "534px",
+      "height": "640pxpx",
+      "class": "banner__image"
     }
   },
   "product": {
