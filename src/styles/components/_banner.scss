@@ -1,5 +1,6 @@
-@use "../abstracts/variables" as *;
+@use "../abstracts/variables" as *; 
 @use "../abstracts/mixins" as *;
+
 .banner {
   &__tittle {
     font-family: $font-family-heading;
@@ -7,16 +8,16 @@
     font-size: var(--font-size-6xl);
     line-height: var(--line-height-4xl);
     letter-spacing: -0.5px;
-
+    
     &--color {
       color: var(--label-color);
     }
-
+    
     &--action {
       text-align: center;
     }
   }
-
+  
   &__total {
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
@@ -24,28 +25,28 @@
     line-height: var(--line-height-4xl);
     letter-spacing: -0.5px;
   }
-
+  
   &__description {
     font-weight: $font-weight-medium;
     font-size: var(--font-size-xl);
     line-height: var(--line-height-lg);
   }
-
+  
   &__item {
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
   }
-
+  
   &__unit {
     @include navigation-link-style;
-
+    
     &--text {
       color: var(--text-muted);
     }
   }
-
+  
   &__menu {
-    display: flex;
+    display: flex; 
     justify-content: center;
   }
 }
