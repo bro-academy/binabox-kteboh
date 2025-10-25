@@ -19,18 +19,16 @@
 	{# <img src="{{ banner.image.src }}" alt="{{ banner.image.alt }}" class="banner__image"/> #}
 
 
-	{% set pictureData = {
-  sourcePathway: [
-    { srcset: '/banner/banner-cube.avif', type: 'avif' },
-    { srcset: '/banner/banner-cube.webp', type: 'webp' },
-    { srcset: '/banner/banner-cube.jpg', type: 'jpeg' }
-  ],
-  imgPath: '/banner/banner-cube.png',
-  alt: 'Banner Cube'
-} %}
-
-	{{ macros.picture(pictureData, 'banner__image', '534', '640') }}
-
+	{{ ui.picture(
+			"banner__picture",
+			index.banner.picture.src,
+			index.banner.picture.sources,
+			index.banner.picture.alt,
+			index.banner.picture.width,
+			index.banner.picture.height,
+			"center",
+			"cover"
+		) }}
 </section>
 
 
