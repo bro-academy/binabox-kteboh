@@ -4,7 +4,7 @@
 		{% for item in breadcrumbs %}
 			<li class="breadcrumbs__unit">
 				<a href="{{ item.url }}" class="{% if item.highlight %}breadcrumbs__highlight breadcrumbs__highlight--text{% endif %}">
-					{{ item.label }}
+					{{ item.label1 }}
 					{% if not loop.last %}
 						|
 					{% endif %}
