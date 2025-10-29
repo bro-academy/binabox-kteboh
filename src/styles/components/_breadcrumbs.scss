@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 .breadcrumbs {
   &__tittle {
     font-family: $font-family-heading;
@@ -21,11 +23,13 @@
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
     color: var(--homepage-text-color);
+    display: flex;
+    justify-content: center;
   }
 
   &__highlight {
     &--text {
-      color: #E7EEF7A8;
+      color: #e7eef7a8;
     }
   }
 }

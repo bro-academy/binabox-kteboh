@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 .overview {
   &__tittle {
     font-family: $font-family-heading;
@@ -21,7 +23,7 @@
       color: var(--label-color);
     }
   }
-  
+
   &__item {
     background-color: var(--secondary-bg-color);
   }

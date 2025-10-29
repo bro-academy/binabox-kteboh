@@ -1,0 +1,376 @@
+{
+    "page": {
+        "title": "Explore catalog"
+    },
+    "title": "Explore catalog",
+    "breadcrumbs": {
+        "title": "Explore catalog",
+        "title_class": "breadcrumbs__title--action",
+        "items": [
+            {
+                "text": "Home |",
+                "url": "/home"
+            },
+            {
+                "text": "catalog",
+                "url": "/catalog"
+            }
+        ]
+    },
+    "sidebar": {
+        "action": "submit",
+        "method": "post",
+        "submit_text": "Apply",
+        "groups": [
+            {
+                "title": "Clothing",
+                "wrapper_class": "sidebar__brand-wrapper",
+                "header_class": "sidebar__brand-header",
+                "title_class": "sidebar__brand-title",
+                "item_class": "sidebar__brand-item",
+                "divider": true,
+                "icon": {
+                    "src": "#",
+                    "alt": "clothing icon",
+                    "class": "sidebar__brand-image"
+                },
+                "items": [
+                    {
+                        "type": "checkbox",
+                        "name": "clothing",
+                        "id": "combatant",
+                        "label": "Combatant",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "clothing",
+                        "id": "ninja",
+                        "label": "Ninja",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "clothing",
+                        "id": "king",
+                        "label": "King",
+                        "checked": true,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "clothing",
+                        "id": "queen",
+                        "label": "Queen",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "clothing",
+                        "id": "robot",
+                        "label": "Robot",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    }
+                ]
+            },
+            {
+                "title": "Eyes",
+                "wrapper_class": "sidebar__color-wrapper",
+                "header_class": "sidebar__color-header",
+                "title_class": "sidebar__color-title",
+                "item_class": "sidebar__color-item",
+                "divider": true,
+                "icon": {
+                    "src": "#",
+                    "alt": "eyes icon",
+                    "class": "sidebar__color-image"
+                },
+                "items": [
+                    {
+                        "type": "radio",
+                        "name": "eyes",
+                        "id": "yellow",
+                        "label": "Yellow",
+                        "checked": false,
+                        "input_class": "sidebar__radio"
+                    },
+                    {
+                        "type": "radio",
+                        "name": "eyes",
+                        "id": "green",
+                        "label": "Green",
+                        "checked": true,
+                        "input_class": "sidebar__radio"
+                    },
+                    {
+                        "type": "radio",
+                        "name": "eyes",
+                        "id": "mix",
+                        "label": "Mix",
+                        "checked": false,
+                        "input_class": "sidebar__radio"
+                    },
+                    {
+                        "type": "radio",
+                        "name": "eyes",
+                        "id": "orange",
+                        "label": "Orange",
+                        "checked": false,
+                        "input_class": "sidebar__radio"
+                    }
+                ]
+            },
+            {
+                "title": "Face",
+                "wrapper_class": "sidebar__part",
+                "header_class": "sidebar__part-wrapper",
+                "title_class": "sidebar__part-title",
+                "divider": false,
+                "icon": {
+                    "src": "#",
+                    "alt": "face icon",
+                    "class": "sidebar__part-image"
+                }
+            },
+            {
+                "title": "Skin",
+                "wrapper_class": "sidebar__part",
+                "header_class": "sidebar__part-wrapper",
+                "title_class": "sidebar__part-title",
+                "divider": false,
+                "icon": {
+                    "src": "#",
+                    "alt": "skin icon",
+                    "class": "sidebar__part-image"
+                }
+            },
+            {
+                "title": "Background",
+                "wrapper_class": "sidebar__part",
+                "header_class": "sidebar__part-wrapper",
+                "title_class": "sidebar__part-title",
+                "divider": false,
+                "icon": {
+                    "src": "#",
+                    "alt": "background icon",
+                    "class": "sidebar__part-image"
+                }
+            },
+            {
+                "title": "Special",
+                "wrapper_class": "sidebar__special-wrapper",
+                "header_class": "sidebar__special-header",
+                "title_class": "sidebar__special-title",
+                "item_class": "sidebar__special-color",
+                "divider": false,
+                "icon": {
+                    "src": "#",
+                    "alt": "special icon",
+                    "class": "sidebar__special-image"
+                },
+                "items": [
+                    {
+                        "type": "checkbox",
+                        "name": "special",
+                        "id": "yellow2",
+                        "label": "Yellow",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "special",
+                        "id": "green2",
+                        "label": "Green",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "special",
+                        "id": "mix2",
+                        "label": "Mix",
+                        "checked": true,
+                        "input_class": "sidebar__checkbox"
+                    },
+                    {
+                        "type": "checkbox",
+                        "name": "special",
+                        "id": "orange2",
+                        "label": "Orange",
+                        "checked": false,
+                        "input_class": "sidebar__checkbox"
+                    }
+                ]
+            }
+        ]
+    },
+    "hero": {
+        "title": "All item",
+        "form": {
+            "action": "submit",
+            "method": "post",
+            "select": {
+                "name": "sort",
+                "id": "sort",
+                "options": [
+                    {
+                        "value": "sort-by",
+                        "label": "Sort by",
+                        "class": "hero__option-sort"
+                    },
+                    {
+                        "value": "newest",
+                        "label": "Newest",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "most popular",
+                        "label": "Most popular",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "increasing in price",
+                        "label": "Increasing in price",
+                        "class": "hero__option"
+                    },
+                    {
+                        "value": "lowering the price",
+                        "label": "Lowering the price",
+                        "class": "hero__option"
+                    }
+                ]
+            },
+            "search": {
+                "name": "search-nft",
+                "id": "search_nft",
+                "placeholder": "search NFT",
+                "pattern": "[A-Za-z0-9]+"
+            }
+        },
+        "actions": [
+            {
+                "label": "NFR",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            },
+            {
+                "label": "ICO",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            },
+            {
+                "label": "Crypto",
+                "url": "#",
+                "class": "hero__link secondary-button"
+            }
+        ],
+        "reset_text": "Clear all",
+        "cards": [
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product",
+                "buttons": [
+                    {
+                        "type": "button",
+                        "class": "button hero__centered-favourite",
+                        "label": "Favourites"
+                    },
+                    {
+                        "type": "link",
+                        "url": "#",
+                        "class": "button hero__centered-buy",
+                        "label": "Buy"
+                    }
+                ]
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "Sold out",
+                "label_class": "hero__label--sold-out",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "src": "#",
+                    "alt": "Echo of Bones"
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            }
+        ],
+        "load_more": {
+            "label": "Load more",
+            "url": "#",
+            "class": "hero__pages secondary-button"
+        }
+    }
+}

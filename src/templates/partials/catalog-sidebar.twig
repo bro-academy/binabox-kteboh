@@ -1,0 +1,35 @@
+<section class="sidebar">
+	<form
+		action="{{ sidebar.action }}" method="{{ sidebar.method }}" class="sidebar__form-wrapper">
+
+		{# Loop through each group of sidebar elements #}
+		{% for group in sidebar.groups %}
+			<div class="{{ group.wrapper_class }}">
+				<fieldset class="sidebar__fieldset">
+
+					<div class="{{ group.header_class }}">
+						<h2 class="{{ group.title_class }}">{{ group.title }}</h2>
+						<img src="{{ group.icon.src }}" alt="{{ group.icon.alt }}" class="{{ group.icon.class }}">
+					</div>
+
+					{% if group.divider %}
+						<hr class="sidebar__divider">
+					{% endif %}
+
+					{# Check for input items (checkboxes or radios) #}
+					{% if group.items is defined %}
+						{% for item in group.items %}
+							<p class="{{ group.item_class }}">
+								<input type="{{ item.type }}" name="{{ item.name }}" id="{{ item.id }}" {% if item.checked %} checked {% endif %} class="visually-hidden {{ item.input_class }}">
+								<label for="{{ item.id }}" class="sidebar__label">{{ item.label }}</label>
+							</p>
+						{% endfor %}
+					{% endif %}
+
+				</fieldset>
+			</div>
+		{% endfor %}
+
+		<button type="submit" class="button sidebar__apply-button">{{ sidebar.submit_text }}</button>
+	</form>
+</section>

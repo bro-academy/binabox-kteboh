@@ -1,0 +1,17 @@
+<section class="breadcrumbs">
+	<h1 class="breadcrumbs__tittle breadcrumbs__tittle--action">{{ title2 }}</h1>
+	<ul class="breadcrumbs__menu">
+		{% for item in breadcrumbs %}
+			<li class="breadcrumbs__unit">
+				<a href="{{ item.url }}" class="{% if item.highlight %}breadcrumbs__highlight breadcrumbs__highlight--text{% endif %}">
+					{{ item.label1 }}
+					{% if not loop.last %}
+						|
+					{% endif %}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
+
+{# make it work  #}

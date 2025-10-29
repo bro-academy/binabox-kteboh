@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.breadcrumbs {
+    &__title {
+        font-family: 'Bakbak One', sans-serif;
+        color: var(--primary-color);
+        font-size: $font-size-4xl;
+        line-height: $line-height-3xl;
+        letter-spacing: -0.5px;
+    }
+    &__title--action {
+        text-align: center;
+    }
+    &__menu {
+        display: flex;
+        gap: 8px;
+        margin-top: 16px;
+    }
+    &__unit {
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+        color: var(--primary-color);
+    }
+}

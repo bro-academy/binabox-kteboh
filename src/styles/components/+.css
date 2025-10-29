@@ -2,7 +2,13 @@
 @import "./_banner.scss";
 @import "./_blog.scss";
 @import "./_breadcrumbs.scss";
+@import "./_catalog-breadcrumbs.scss";
+@import "./_catalog-hero.scss";
+@import "./_catalog-sidebar.scss";
 @import "./_company.scss";
+@import "./_contact-adress.scss";
+@import "./_contact-description.scss";
+@import "./_contact-details.scss";
 @import "./_employees.scss";
 @import "./_footer.scss";
 @import "./_overview.scss";

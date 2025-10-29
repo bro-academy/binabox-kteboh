@@ -1,0 +1,10 @@
+{% extends "src/templates/layouts/base.twig" %}
+{% block title %}
+	{{pages.blog.title}}
+{% endblock %}
+{% set current_page = "blog" %}
+{% block content %}
+	{% include "src/templates/partials/catalog-breadcrumbs.twig" %}
+	{% include "src/templates/partials/catalog-sidebar.twig" %}
+	{% include "src/templates/partials/catalog-hero.twig" %}
+{% endblock %}
