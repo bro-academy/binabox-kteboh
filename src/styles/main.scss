@@ -4,6 +4,7 @@
 @use "base/reset";
 @use "base/globals";
 
+@use 'components/button';
 @use "components/page-header";
 @use "components/banner";
 @use "components/product";
@@ -21,3 +22,5 @@
 @use "components/catalog-sidebar";
 @use "components/catalog-hero";
 @use "components/catalog-breadcrumbs";
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;

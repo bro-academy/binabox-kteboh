@@ -6,19 +6,19 @@
     font-weight: $font-weight-normal;
     @include large-centered-title;
   }
-
+  
   &__question {
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-xl);
   }
-
+  
   &__answer {
     font-weight: $font-weight-semibold;
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
-
+    
     &--color {
       color: var(--label-color);
     }

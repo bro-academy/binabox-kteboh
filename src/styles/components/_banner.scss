@@ -16,7 +16,7 @@
       text-align: center;
     }
   }
-
+  
   &__total {
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
@@ -24,13 +24,13 @@
     line-height: var(--line-height-4xl);
     letter-spacing: -0.5px;
   }
-
+  
   &__description {
     font-weight: $font-weight-medium;
     font-size: var(--font-size-xl);
     line-height: var(--line-height-lg);
   }
-
+  
   &__item {
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
