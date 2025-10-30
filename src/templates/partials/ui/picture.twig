@@ -1,8 +1,16 @@
-{% macro picture(classes, src, sources, alt, width, height, position, fit) %}
+{% macro picture(classes, sources, alt, width, height, fit) %}
 	<picture>
-		{% for source in sources %}
-			<source srcset="/src/assets/images/{{ picture.source.src }}" type="image/{{ picture.source.type }}">
+		{% for src in sources %}
+			{% if src.type == 'avif' %}
+				<source srcset="src/assets/images/{{ src.avif }}?format=avif" type="image/avif">
+			{% elseif src.type == 'webp' %}
+				<source srcset="src/assets/images/{{ src.webp }}?format=webp" type="image/webp">
+			{% elseif src.type == 'jpg' %}
+				<source srcset="src/assets/images/{{ src.jpg }}?format=jpg" type="image/jpg">
+			{% elseif src.type == 'png' %}
+				<source srcset="src/assets/images/{{ src.png }}?format=png" type="image/png">
+			{% endif %}
 		{% endfor %}
-		<img class="{{ classes }}" src="/src/assets/images/{{ picture.src }}" alt="{{ picture.alt }}" loading="lazy" decoding="async" width="{{ width }}" height="{{ picture.height }}" style="object-position: {{ picture.position }}, object-fit: {{ picture.fit }}">
+		<img class="{{ classes }}" src="/src/assets/images/{{ sources[sources|length - 1].png }}" alt="{{ alt }}" loading="lazy" decoding="async" width="{{ width }}" height="{{ height }}" style="object-position:{{ fit }}">
 	</picture>
 {% endmacro %}

@@ -1,4 +1,4 @@
-{% import 'ui/picture.twig' as macros %}
+{% import 'ui/picture.twig' as ui %}
 <section class="banner">
 	<h1 class="banner__tittle">
 		WITH
@@ -20,16 +20,12 @@
 
 
 	{{ ui.picture(
-			"banner__picture",
-			index.banner.picture.src,
-			index.banner.picture.sources,
-			index.banner.picture.alt,
-			index.banner.picture.width,
-			index.banner.picture.height,
-			"center",
-			"cover"
-		) }}
+    banner.picture.class,
+    banner.picture.source,
+    banner.picture.alt,
+    banner.picture.width,
+    banner.picture.height,
+    banner.picture.fit
+  ) }}
 </section>
-
-
 {# make it work  #}

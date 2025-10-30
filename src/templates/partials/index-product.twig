@@ -1,15 +1,27 @@
+{% import 'ui/picture.twig' as ui %}
 <section class="product">
 	<img src="{{ product.icon }}" alt="folder" class="product__icon"/>
 	<h2 class="product__tittle">{{ product.title }}</h2>
 	<a href="{{ product.see_all_link }}" class="product__link--highlight link">See all</a>
 	<button class="button product__button-primary--highlight">&lt;</button>
 	<button class="button product__button--color">&gt;</button>
-
 	<ul class="product__menu">
 		{% for item in product.items %}
 			<li class="product__item">
 				<article class="product__card">
-					<img src="{{ item.image }}" alt="{{ item.description }}" class="product__image"/>
+					{% if item.picture %}
+						{{ ui.picture(
+        item.picture.class,
+        item.picture.source,
+        item.picture.alt,
+        item.picture.width,
+        item.picture.height,
+        item.picture.fit
+      ) }}
+					{% elseif item.image %}
+						<img src="{{ item.image }}" alt="{{ item.description }}" class="product__image"/>
+					{% endif %}
+
 					{% if item.label %}
 						<span class="product__label{% if item.sold_out %} product__label--sold-out{% endif %}">{{ item.label }}</span>
 					{% endif %}
@@ -20,5 +32,3 @@
 		{% endfor %}
 	</ul>
 </section>
-
-{# make it work  #}

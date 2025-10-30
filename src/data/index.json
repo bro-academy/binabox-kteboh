@@ -33,24 +33,29 @@
       "text": "Whitelist now"
     },
     "picture": {
-      "src": "/banner/banner-cube.png",
-      "alt": "shadow box Binabox",
-      "width": "534",
-      "height": "640",
-      "sources": [
+      "class": "banner__picture",
+      "source": [
         {
-          "src": "/banner/banner-cube.avif",
+          "avif": "banner/banner-cube.avif",
           "type": "avif"
         },
         {
-          "src": "/banner/banner-cube.webp",
+          "webp": "banner/banner-cube.webp",
           "type": "webp"
         },
         {
-          "src": "/banner/banner-cube.jpg",
+          "jpg": "banner/banner-cube.jpg",
           "type": "jpg"
+        },
+        {
+          "png": "banner/banner-cube.png",
+          "type": "png"
         }
-      ]
+      ],
+      "alt": " Binabox box shawdow cube",
+      "width": 534,
+      "height": 640,
+      "fit": "center"
     }
   },
   "product": {
@@ -59,31 +64,151 @@
     "see_all_link": "#",
     "items": [
       {
-        "image": "#",
+        "picture": {
+          "class": "product__image",
+          "source": [
+            {
+              "avif": "catalog/Echo of bones.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "catalog/Echo of bones.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "catalog/Echo of bones.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "catalog/Echo of bones.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Echo of Bones",
+          "width": 253,
+          "height": 324,
+          "fit": "center"
+        },
         "label": "New",
         "price": "$1990",
         "description": "Echo of Bones"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "product__image",
+          "source": [
+            {
+              "avif": "/catalog/nyx the watcher.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/catalog/nyx the watcher.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/catalog/nyx the watcher.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/catalog/nyx the watcher.png",
+              "type": "png"
+            }
+          ],
+          "alt": " nyx the watcher cat",
+          "width": 253,
+          "height": 324,
+          "fit": "center"
+        },
         "label": "New",
         "price": "$299.99",
         "description": "Nyx the watcher"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "product__image",
+          "source": [
+            {
+              "avif": "/catalog/blade of silence.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/catalog/blade of silence.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/catalog/blade of silence.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/catalog/blade of silence.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Blade of silence",
+          "width": 253,
+          "height": 324,
+          "fit": "center"
+        },
         "label": "Sold out",
         "price": "$20",
         "description": "Blade of silence",
         "sold_out": true
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "product__image",
+          "source": [
+            {
+              "avif": "/catalog/data core alpha.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/catalog/data core alpha.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/catalog/data core alpha.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/catalog/data core alpha.png",
+              "type": "png"
+            }
+          ],
+          "alt": " data core alpha",
+          "width": 253,
+          "height": 324,
+          "fit": "center"
+        },
         "price": "$1,000,000",
         "description": "Data core:Alpha"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "product__image",
+          "source": [
+            {
+              "avif": "/catalog/phantom console.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/catalog/phantom console.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/catalog/phantom console.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/catalog/phantom console.png",
+              "type": "png"
+            }
+          ],
+          "alt": " phantom console",
+          "width": 253,
+          "height": 324,
+          "fit": "center"
+        },
         "price": "$199.5",
         "description": "Phantom Console"
       }
