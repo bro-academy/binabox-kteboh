@@ -218,7 +218,31 @@
     "title": "Our blog",
     "articles": [
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/Neural drift.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/Neural drift.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/Neural drift.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/Neural drift.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Neural drift",
+          "width": 736,
+          "height": 664,
+          "fit": "center"
+        },
         "label": "NFT",
         "icon": "",
         "author": "NOVA RIVEN",
@@ -228,7 +252,31 @@
         "url": "#"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/dead frame.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/dead frame.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/dead frame.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/dead frame.png",
+              "type": "png"
+            }
+          ],
+          "alt": " dead frame",
+          "width": 736,
+          "height": 198,
+          "fit": "center"
+        },
         "label": "DROP",
         "icon": "",
         "author": "Kairo Null",
@@ -238,7 +286,31 @@
         "url": "#"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/glitch panther.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/glitch panther.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/glitch panther.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/glitch panther.png",
+              "type": "png"
+            }
+          ],
+          "alt": " glitch panther",
+          "width": 736,
+          "height": 198,
+          "fit": "center"
+        },
         "label": "NFT",
         "icon": "#",
         "author": "Synthya Void",
@@ -248,7 +320,31 @@
         "url": "#"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/primal.exe.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/primal.exe.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/primal.exe.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/primal.exe.png",
+              "type": "png"
+            }
+          ],
+          "alt": " primal.exe",
+          "width": 736,
+          "height": 198,
+          "fit": "center"
+        },
         "label": "Rare",
         "icon": "#",
         "author": "Dr.Wex Omega",
@@ -258,7 +354,31 @@
         "url": "#"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/white protocol.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/white protocol.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/white protocol.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/white protocol.png",
+              "type": "png"
+            }
+          ],
+          "alt": " white protocol",
+          "width": 736,
+          "height": 198,
+          "fit": "center"
+        },
         "label": "NFT",
         "icon": "#",
         "author": "Tony Nguyen",
@@ -268,7 +388,31 @@
         "url": "#"
       },
       {
-        "image": "#",
+        "picture": {
+          "class": "blog__image",
+          "source": [
+            {
+              "avif": "/blog/retrocore.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/blog/retrocore.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/blog/retrocore.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/blog/retrocore.png",
+              "type": "png"
+            }
+          ],
+          "alt": " retrocore",
+          "width": 736,
+          "height": 664,
+          "fit": "center"
+        },
         "label": "ARTIFACT",
         "icon": "#",
         "author": "Echo Zero",
@@ -312,7 +456,31 @@
     "members": [
       {
         "name": "Nova Riven",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/Nova Riven.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/Nova Riven.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/Nova Riven.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/Nova Riven.png",
+              "type": "png"
+            }
+          ],
+          "alt": " nova riven picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Creative Architect",
         "socials": [
           "facebook",
@@ -323,7 +491,31 @@
       },
       {
         "name": "Echo Zero",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/echo-zero.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/echo-zero.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/echo-zero.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/echo-zero.png",
+              "type": "png"
+            }
+          ],
+          "alt": " echo-zero picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Tech Whisperer",
         "socials": [
           "facebook",
@@ -334,7 +526,31 @@
       },
       {
         "name": "kairo Null",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/kairo Null.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/kairo Null.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/kairo Null.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/kairo Null.png",
+              "type": "png"
+            }
+          ],
+          "alt": " kairo Null picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Lore Engineer",
         "socials": [
           "facebook",
@@ -345,7 +561,31 @@
       },
       {
         "name": "Dr.Wex Omega",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/Dr wex omega.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/Dr wex omega.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/Dr wex omega.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/Dr wex omega.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Dr wex omega picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Visaul Disruptor",
         "socials": [
           "facebook",
@@ -356,7 +596,31 @@
       },
       {
         "name": "Synthya Void",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/Synthya void.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/Synthya void.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/Synthya void.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/Synthya void.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Synthya void picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "UX Seer",
         "socials": [
           "facebook",
@@ -367,7 +631,31 @@
       },
       {
         "name": "Mirlo Drift",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/Mirlo drift.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/Mirlo drift.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/Mirlo drift.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/Mirlo drift.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Mirlo drift picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Community Catalyst",
         "socials": [
           "facebook",
@@ -378,7 +666,31 @@
       },
       {
         "name": "Axon Rune",
-        "image": "#",
+        "picture": {
+          "class": "team__image",
+          "source": [
+            {
+              "avif": "/team/Axon Rune.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "/team/Axon Rune.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "/team/Axon Rune.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "/team/Axon Rune.png",
+              "type": "png"
+            }
+          ],
+          "alt": " Axon Rune picture",
+          "width": 120,
+          "height": 120,
+          "fit": "center"
+        },
         "speciality": "Security Ghost",
         "socials": [
           "facebook",
