@@ -1,10 +1,21 @@
+{% import 'ui/picture.twig' as ui %}
 <section class="post">
-	{% for figure in post.figures %}
-		<figure class="post__figure">
-			<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
-			<figcaption class="post__caption">{{ figure.caption }}</figcaption>
-		</figure>
-	{% endfor %}
+
+
+	<figure
+		class="post__figure">
+		{# <img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/> #}
+		{{ ui.picture(
+					figure.picture.class,
+					figure.picture.source,
+					figure.picture.alt,
+					figure.picture.width,
+					figure.picture.height,
+					figure.picture.fit
+				) }}
+		<figcaption class="post__caption">{{ figure.caption }}</figcaption>
+	</figure>
+
 
 	<h2 class="post__tittle">{{ post.title }}</h2>
 	<button class="post__button button">{{ post.category }}</button>
@@ -47,7 +58,49 @@
 		{{ post.rating.score }}
 		{{ post.rating.source }}
 	</span>
+	{% for figure in post.gallery %}
+		<figure class="post__figure">
+			<img src="{{ figure.src }}" alt="{{ figure.alt }}" class="post__image"/>
+			{{ ui.picture(
+						figure.picture.class,
+						figure.picture.source,
+						figure.picture.alt,
+						figure.picture.width,
+						figure.picture.height,
+						figure.picture.fit
+					) }}
 
+			<figcaption class="post__caption">{{ figure.caption }}</figcaption>
+		</figure>
+	{% endfor %}
+	{# <figure
+																							class="post__figure">
+																							<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
+																							{{ ui.picture(
+																											figure.picture.class,
+																											figure.picture.src,
+																											figure.picture.source,
+																											figure.picture.alt,
+																											figure.picture.width,
+																											figure.picture.height,
+																											figure.picture.fit
+																										) }}
+																							<figcaption class="post__caption">{{ figure.caption }}</figcaption>
+																						</figure>
+																					
+																						<figure
+																							class="post__figure">
+																							<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
+																							{{ ui.picture(
+																											figure.picture.class,
+																											figure.picture.source,
+																											figure.picture.alt,
+																											figure.picture.width,
+																											figure.picture.height,
+																											figure.picture.fit
+																										) }}
+																							<figcaption class="post__caption">{{ figure.caption }}</figcaption>
+																						</figure> #}
 	<section class="post">
 		<h3 class="post__subtittle">{{ post.nft_intro.title }}</h3>
 		<p class="post__text">

@@ -2,7 +2,7 @@
   "page": {
     "title": "OUR BLOG"
   },
-  "title": "Our blog",
+  "title2": "Our blog",
   "breadcrumbs": [
     {
       "label": "Home",
@@ -18,6 +18,34 @@
       "highlight": true
     }
   ],
+  "figure": {
+    "picture": {
+      "class": "post__figure",
+      "source": [
+        {
+          "avif": "blog-page-images/blog-main-photo.avif",
+          "type": "avif"
+        },
+        {
+          "webp": "blog-page-images/blog-main-photo.webp",
+          "type": "webp"
+        },
+        {
+          "jpg": "blog-page-images/blog-main-photo.jpg",
+          "type": "jpg"
+        },
+        {
+          "png": "blog-page-images/blog-main-photo.png",
+          "type": "png"
+        }
+      ],
+      "alt": "Man vs the Dragon",
+      "width": 1024,
+      "height": 559,
+      "fit": "center"
+    },
+    "caption": "A Basilisk enters the arena — its emerald scales shimmer with encoded rage."
+  },
   "post": {
     "title": "The Basilisks NFT",
     "category": "Gaming",
@@ -43,7 +71,7 @@
         "text": "The game's AI learns from every move. If your Basilisk gets too strong - it becomes a target. If it dies? It's burned forever. If it wins? You earn crypto, glory and power."
       }
     ],
-    "features": [
+    "feature": [
       {
         "label": "Unique DNA structure",
         "icon": "unique.png"
@@ -67,20 +95,61 @@
       "score": "8.5/10",
       "source": "Markout Corporation"
     },
-    "figures": [
+    "gallery": [
       {
-        "img": "basilisk1.jpg",
-        "alt": "Man vs the Dragon",
-        "caption": "A Basilisk enters the arena..."
-      },
-      {
-        "img": "basilisk2.jpg",
-        "alt": "Gen-3 Basilisk",
+        "picture": {
+          "class": "post__figure",
+          "source": [
+            {
+              "avif": "blog-page-images/blog-secondary-photo-1.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "blog-page-images/blog-secondary-photo-1.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "blog-page-images/blog-secondary-photo-1.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "blog-page-images/blog-secondary-photo-1.png",
+              "type": "png"
+            }
+          ],
+          "alt": "Gen-3 Basilisk",
+          "width": 500,
+          "height": 394,
+          "fit": "center"
+        },
         "caption": "Close-up of a Gen-3 Basilisk..."
       },
       {
-        "img": "basilisk3.jpg",
-        "alt": "Bonded Basilisk",
+        "picture": {
+          "class": "post__figure",
+          "source": [
+            {
+              "avif": "blog-page-images/blog-secondary-photo-2.avif",
+              "type": "avif"
+            },
+            {
+              "webp": "blog-page-images/blog-secondary-photo-2.webp",
+              "type": "webp"
+            },
+            {
+              "jpg": "blog-page-images/blog-secondary-photo-2.jpg",
+              "type": "jpg"
+            },
+            {
+              "png": "blog-page-images/blog-secondary-photo-2.png",
+              "type": "png"
+            }
+          ],
+          "alt": "Bonded Basilisk",
+          "width": 500,
+          "height": 394,
+          "fit": "center"
+        },
         "caption": "A bonded Basilisk with its summoner..."
       }
     ],
