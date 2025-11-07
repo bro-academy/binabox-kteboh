@@ -21,7 +21,7 @@
   &__label {
     @include product-label-style;
 
-    &--background {
+    &--sold-out {
       background-color: var(--label-modifier-color);
       color: var(--label-primary-color);
     }
