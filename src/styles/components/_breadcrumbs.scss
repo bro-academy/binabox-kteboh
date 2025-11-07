@@ -1,13 +1,16 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .breadcrumbs {
+  background-image: url("../assets/icons/big_circular_lines.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
   &__tittle {
     font-family: $font-family-heading;
     font-size: var(--font-size-6xl);
     line-height: var(--line-height-5xl);
     letter-spacing: -0.5px;
     color: var(--homepage-text-color);
-
     &--action {
       text-align: center;
     }

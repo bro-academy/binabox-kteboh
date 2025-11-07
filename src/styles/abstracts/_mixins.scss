@@ -19,7 +19,11 @@
   line-height: var(--line-height-base);
   border: 2px solid var(--link-border-color);
   padding: 10px 24px;
-  max-width: 120px;
+  // styles for discord icon
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 @mixin navigation-link-style {

@@ -15,7 +15,12 @@
 	</nav>
 	<div class="page-header__form">
 		<input class="page-header__search-input" type="text" name="search" id="search" placeholder="{{ header.searchPlaceholder }}"/>
-		<a href="{{ header.discord.url }}" class="page-header__link link">{{ header.discord.label }}</a>
+		<a
+			href="{{ header.discord.url }}" class="page-header__link link">
+			{# <svg class="link__icon">
+							<use xlink:href="src/assets/icons/sprite.svg#Discord"></use>
+						</svg> #}
+			{{ header.discord.label }}</a>
 		<button class="page-header__button button">{{ header.loginButton }}</button>
 	</div>
 </header>
