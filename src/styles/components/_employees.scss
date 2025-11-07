@@ -1,6 +1,12 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .employees {
+    display: flex;
+    flex-direction: column;
+    width: 1728px;
+    height: 888px;
+    gap: 40px;
+    padding: 64px;
   &__tittle {
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
@@ -18,6 +24,23 @@
   &__item {
     background-color: var(--secondary-bg-color);
     padding: 32px;
+    width: 293px;
+    height: 316px;
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  &__social {
+    display: flex;
+    gap: 8px;
+  }
+  &__social-item {
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
   }
 
   &__name {

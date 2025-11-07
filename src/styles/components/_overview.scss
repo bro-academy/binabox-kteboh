@@ -1,6 +1,9 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .overview {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   &__tittle {
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
@@ -12,6 +15,9 @@
     font-weight: $font-weight-normal;
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-xl);
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
   }
 
   &__answer {

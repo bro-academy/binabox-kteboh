@@ -9,6 +9,8 @@
   line-height: var(--line-height-lg);
   border: none;
   cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
 }
 
 @mixin input-with-border-style {
@@ -19,10 +21,8 @@
   line-height: var(--line-height-base);
   border: 2px solid var(--link-border-color);
   padding: 10px 24px;
-  // styles for discord icon
+  background-color: $main-bg-color;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 
@@ -34,6 +34,8 @@
   font-weight: $font-weight-semibold;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
+  display: inline-flex;
+  gap: 8px;
 }
 
 @mixin product-label-style {

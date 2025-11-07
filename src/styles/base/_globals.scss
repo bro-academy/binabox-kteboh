@@ -7,6 +7,10 @@ body {
   font-weight: $font-weight-normal;
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
+  width: 1728px;
+  height: 6214px;
+  padding: 64px;
+
 }
 li {
   list-style: none;
@@ -133,4 +137,8 @@ input:user-valid {
       background: #D0D7FB2B;
       border: 2px solid #E5ECFB5C;
   }
+}
+svg {
+  width: 24px;
+  height: 24px;
 }

@@ -1,7 +1,10 @@
 {% import 'ui/picture.twig' as ui %}
 <section class="product">
-	<img src="{{ product.icon }}" alt="folder" class="product__icon"/>
-	<h2 class="product__tittle">{{ product.title }}</h2>
+	<h2 class="product__tittle">
+		<svg class="product__tittle-icon">
+			<use xlink:href="src/assets/icons/sprite.svg#folder"></use>
+		</svg>
+		{{ product.title }}</h2>
 	<a href="{{ product.see_all_link }}" class="product__link--highlight link">See all</a>
 	<button class="button product__button-primary--highlight">&lt;</button>
 	<button class="button product__button--color">&gt;</button>

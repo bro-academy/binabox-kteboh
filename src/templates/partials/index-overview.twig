@@ -2,9 +2,27 @@
 	<h2 class="overview__tittle">{{ overview.title }}</h2>
 
 	{% for faq in overview.faqs %}
-		<details class="overview__item" {% if faq.open %} open {% endif %}>
-			<summary class="overview__question">{{ faq.question }}</summary>
-			<span>{{ faq.open ? '−' : '+' }}</span>
+		<details
+			class="overview__item" {% if faq.open %} open {% endif %}>
+			{# <summary class="overview__question">{{ faq.question }}
+							<span>{{ faq.open ? '−' : '+' }}</span>
+						</summary> #}
+			<summary class="overview__question">
+				{{ faq.question }}
+
+				{% if faq.open %}
+					{# Minus icon #}
+					<svg class="icon">
+						<use xlink:href="src/assets/icons/sprite.svg#minus"></use>
+					</svg>
+				{% else %}
+					{# Plus icon #}
+					<svg class="icon">
+						<use xlink:href="src/assets/icons/sprite.svg#plus"></use>
+					</svg>
+				{% endif %}
+			</summary>
+
 
 			{% if faq.answer %}
 				<hr class="overview__divider"/>

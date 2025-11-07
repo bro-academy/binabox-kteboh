@@ -21,6 +21,13 @@
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
     text-transform: uppercase;
+    display: inline-flex;
+    gap: 8px;
+  }
+  &__author-icon,
+  &__date-icon {
+    width: 16px;
+    height: 16px;
   }
 
   &__subtittle {

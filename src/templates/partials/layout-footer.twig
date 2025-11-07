@@ -18,13 +18,34 @@
 
 	<p class="footer__text">{{ footer.copyright }}</p>
 
-	<ul class="footer__socials">
+	{# <ul class="footer__socials">
+										{% for social in footer.socials %}
+											<li class="footer__directories">
+												<a href="{{ social.href }}">{{ social.name }}</a>
+											</li>
+										{% endfor %}
+									</ul> #}
+	{% set icons = {
+			'Twitter': 'Twitter',
+			'facebook': 'facebook',
+			'Telegram 1': 'Telegram 1',
+			'YOUTUBE': 'YOUTUBE',
+			'Ticktok': 'Ticktok',
+			'Discord': 'Discord'
+		} %}
+
+	<ul class="footer__social">
 		{% for social in footer.socials %}
 			<li class="footer__directories">
-				<a href="{{ social.href }}">{{ social.name }}</a>
+				<a href="#">
+					<svg class="footer__directories-icon">
+						<use xlink:href="src/assets/icons/sprite.svg#{{ icons[social.name] }}"></use>
+					</svg>
+				</a>
 			</li>
 		{% endfor %}
 	</ul>
+
 </footer>
 
 {# make it work  #}

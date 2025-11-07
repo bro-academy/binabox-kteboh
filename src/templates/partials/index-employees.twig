@@ -17,13 +17,26 @@
 					) }}
 					<h3 class="employees__name subtittle">{{ member.name }}</h3>
 					<span class="employees__speciality">{{ member.speciality }}</span>
+					{% set icons = {
+						'Twitter': 'Twitter',
+						'facebook': 'facebook',
+						'Telegram 1': 'Telegram 1',
+						'linkedin': 'LinkedIn',
+						'instagram': 'Instagram'
+					} %}
+
 					<ul class="employees__social">
 						{% for social in member.socials %}
 							<li class="employees__social-item">
-								<a href="#">{{ social }}</a>
+								<a href="#">
+									<svg class="employees__socials-icon">
+										<use xlink:href="src/assets/icons/sprite.svg#{{ icons[social] }}"></use>
+									</svg>
+								</a>
 							</li>
 						{% endfor %}
 					</ul>
+
 				</article>
 			</li>
 		{% endfor %}
