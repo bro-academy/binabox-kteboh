@@ -7,6 +7,9 @@
     }
     &__alignment{
         border: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
     &__label{
         display: block;
@@ -56,8 +59,9 @@
         height: 16px;
         border-radius: 50%;
         background: var(--main-bg-color);
-        border: 5px solid #0265DC;
+        border: 2px solid #0265DC;
         display: block;
+        box-shadow: inset 0 0 0 4px #0265DC;
     }
     &__radio:not(:checked)+label:before {
         content: "";
@@ -91,5 +95,13 @@
     &__text {
         font-size: $font-size-sm;
         line-height:$line-height-sm;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        border: none;
+    }
+    &__checkbox-label {
+        display: flex;
+        gap: 4px;
     }
 }
