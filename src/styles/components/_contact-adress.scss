@@ -1,6 +1,10 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .address {
+    &__icon {
+        width: 56px;
+        height: 56px;
+    }
     &__title{
         font-family: Bakbak One;
         font-size: $font-size-4xl;
@@ -11,5 +15,19 @@
     &__text{
         font-size: $font-size-base;
         line-height: $line-height-base;
+    }
+    &__item {
+        min-width: 288px;
+        max-width: 328px;
+        padding: 40px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #D4D9F242;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
     }
 }
