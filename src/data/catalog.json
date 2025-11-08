@@ -30,7 +30,7 @@
                 "item_class": "sidebar__brand-item",
                 "divider": true,
                 "icon": {
-                    "src": "#",
+                    "name": "minus",
                     "alt": "clothing icon",
                     "class": "sidebar__brand-image"
                 },
@@ -85,7 +85,7 @@
                 "item_class": "sidebar__color-item",
                 "divider": true,
                 "icon": {
-                    "src": "#",
+                    "name": "minus",
                     "alt": "eyes icon",
                     "class": "sidebar__color-image"
                 },
@@ -131,7 +131,7 @@
                 "title_class": "sidebar__part-title",
                 "divider": false,
                 "icon": {
-                    "src": "#",
+                    "name": "plus",
                     "alt": "face icon",
                     "class": "sidebar__part-image"
                 }
@@ -143,7 +143,7 @@
                 "title_class": "sidebar__part-title",
                 "divider": false,
                 "icon": {
-                    "src": "#",
+                    "name": "plus",
                     "alt": "skin icon",
                     "class": "sidebar__part-image"
                 }
@@ -155,7 +155,7 @@
                 "title_class": "sidebar__part-title",
                 "divider": false,
                 "icon": {
-                    "src": "#",
+                    "name": "plus",
                     "alt": "background icon",
                     "class": "sidebar__part-image"
                 }
@@ -168,7 +168,7 @@
                 "item_class": "sidebar__special-color",
                 "divider": false,
                 "icon": {
-                    "src": "#",
+                    "name": "minus",
                     "alt": "special icon",
                     "class": "sidebar__special-image"
                 },
@@ -274,7 +274,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -283,7 +283,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -305,7 +305,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "Sold out",
                 "label_class": "hero__label--sold-out",
@@ -315,7 +315,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -324,7 +324,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -333,7 +333,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -342,7 +342,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -351,7 +351,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
@@ -360,7 +360,7 @@
             {
                 "image": {
                     "src": "#",
-                    "alt": "Echo of Bones"
+                    "alt": "sonic live"
                 },
                 "label": "New",
                 "price": "$1990",
