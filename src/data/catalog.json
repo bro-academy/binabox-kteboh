@@ -273,8 +273,31 @@
         "cards": [
             {
                 "image": {
-                    "src": "#",
-                    "alt": "sonic live"
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
                 },
                 "label": "New",
                 "price": "$1990",
@@ -282,8 +305,31 @@
             },
             {
                 "image": {
-                    "src": "#",
-                    "alt": "sonic live"
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
                 },
                 "label": "New",
                 "price": "$1990",
@@ -304,8 +350,31 @@
             },
             {
                 "image": {
-                    "src": "#",
-                    "alt": "sonic live"
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
                 },
                 "label": "Sold out",
                 "label_class": "hero__label--sold-out",
@@ -314,7 +383,159 @@
             },
             {
                 "image": {
-                    "src": "#",
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
+                },
+                "label": "New",
+                "price": "$1990",
+                "title": "Name Product"
+            },
+            {
+                "image": {
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": " Neural drift",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    },
                     "alt": "sonic live"
                 },
                 "label": "New",
@@ -323,44 +544,31 @@
             },
             {
                 "image": {
-                    "src": "#",
-                    "alt": "sonic live"
-                },
-                "label": "New",
-                "price": "$1990",
-                "title": "Name Product"
-            },
-            {
-                "image": {
-                    "src": "#",
-                    "alt": "sonic live"
-                },
-                "label": "New",
-                "price": "$1990",
-                "title": "Name Product"
-            },
-            {
-                "image": {
-                    "src": "#",
-                    "alt": "sonic live"
-                },
-                "label": "New",
-                "price": "$1990",
-                "title": "Name Product"
-            },
-            {
-                "image": {
-                    "src": "#",
-                    "alt": "sonic live"
-                },
-                "label": "New",
-                "price": "$1990",
-                "title": "Name Product"
-            },
-            {
-                "image": {
-                    "src": "#",
-                    "alt": "sonic live"
+                    "picture": {
+                        "class": "hero__image",
+                        "source": [
+                            {
+                                "avif": "/catalog-page-images/catalog-page-image.avif",
+                                "type": "avif"
+                            },
+                            {
+                                "webp": "/catalog-page-images/catalog-page-image.webp",
+                                "type": "webp"
+                            },
+                            {
+                                "jpg": "/catalog-page-images/catalog-page-image.jpg",
+                                "type": "jpg"
+                            },
+                            {
+                                "png": "/catalog-page-images/catalog-page-image.png",
+                                "type": "png"
+                            }
+                        ],
+                        "alt": "sonic live",
+                        "width": 736,
+                        "height": 664,
+                        "fit": "center"
+                    }
                 },
                 "label": "New",
                 "price": "$1990",

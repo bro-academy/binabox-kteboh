@@ -1,3 +1,4 @@
+{% import 'ui/picture.twig' as ui %}
 <section class="hero">
 
 	<div class="hero__nav">
@@ -27,7 +28,18 @@
 		{% for card in hero.cards %}
 			<div class="hero__cards">
 				<article class="hero__content">
-					<img src="{{ card.image.src }}" alt="{{ card.image.alt }}" class="hero__image"/>
+					{% if card.image.picture is defined %}
+						{{ ui.picture(
+							card.image.picture.class,
+							card.image.picture.source,
+							card.image.picture.alt,
+							card.image.picture.width,
+							card.image.picture.height,
+							card.image.picture.fit
+						) }}
+					{% elseif card.image is defined %}
+						<img src="{{ card.image }}" alt="{{ card.image.alt|default('hero image') }}" class="hero__image"/>
+					{% endif %}
 					<span class="hero__label {{ card.label_class|default('') }}">{{ card.label }}</span>
 					<span class="hero__price">{{ card.price }}</span>
 					<h3 class="hero__card-title">{{ card.title }}</h3>
