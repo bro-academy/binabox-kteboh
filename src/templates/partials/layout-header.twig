@@ -1,7 +1,21 @@
 <header class="page-header">
 	<nav class="page-header__navigation">
-		<a href="#" class="page-header__logo">
-			<img src="{{ header.logo }}" alt="{{ header.logoAlt }}"/>
+		<a
+			href="#" class="page-header__logo">
+			{# <img src="{{ header.logo }}" alt="{{ header.logoAlt }}"/> #}
+			<div class="page-header__wrapper">
+				<div class="page-header__wrapper1">
+					<svg class="page-header__logo1">
+						<use xlink:href="src/assets/icons/sprite.svg#Logo"></use>
+					</svg>
+				</div>
+
+				<div class="page-header__wrapper2">
+					<svg class="page-header__logo2">
+						<use xlink:href="src/assets/icons/sprite.svg#BINABOX"></use>
+					</svg>
+				</div>
+			</div>
 		</a>
 		<ul class="page-header__menu">
 			{% for item in header.menu %}

@@ -1,6 +1,24 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .page-header {
+  &__wrapper {
+    width: 188px;
+    height: 42px;
+    position: relative;
+  }
+  &__logo1 {
+    width: 36px;
+    height: 40px;
+    top: 1px;
+    position: absolute;
+  }
+  &__logo2 {
+    width: 133px;
+    height: 21px;
+    top: 11px;
+    left: 54px;
+    position: absolute;
+  }
   &__link-primary {
     @include navigation-link-style;
     

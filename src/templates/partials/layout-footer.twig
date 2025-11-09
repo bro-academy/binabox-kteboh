@@ -1,9 +1,22 @@
 <footer class="footer">
-	<a href="{{ footer.logo.href }}" class="footer__logo">
-		<img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}"/>
-	</a>
+	<a
+		href="{{ footer.logo.href }}" class="footer__logo">
+		{# <img src="{{ footer.logo.src }}" alt="{{ footer.logo.alt }}"/> #}
+		<div class="footer__logo-wrapper">
+			<div class="footer__wrapper1">
+				<svg class="footer__logo1">
+					<use xlink:href="src/assets/icons/sprite.svg#Logo"></use>
+				</svg>
+			</div>
 
-	<p class="footer__text">{{ footer.description }}</p>
+			<div class="footer__wrapper2">
+				<svg class="footer__logo2">
+					<use xlink:href="src/assets/icons/sprite.svg#BINABOX"></use>
+				</svg>
+			</div>
+		</div>
+		<p class="footer__text">{{ footer.description }}</p>
+	</a>
 
 	<h2 class="footer__navigation">{{ footer.navigation_title }}</h2>
 	<ul class="footer__items">
@@ -19,12 +32,12 @@
 	<p class="footer__text">{{ footer.copyright }}</p>
 
 	{# <ul class="footer__socials">
-										{% for social in footer.socials %}
-											<li class="footer__directories">
-												<a href="{{ social.href }}">{{ social.name }}</a>
-											</li>
-										{% endfor %}
-									</ul> #}
+															{% for social in footer.socials %}
+																<li class="footer__directories">
+																	<a href="{{ social.href }}">{{ social.name }}</a>
+																</li>
+															{% endfor %}
+														</ul> #}
 	{% set icons = {
 			'Twitter': 'Twitter',
 			'facebook': 'facebook',

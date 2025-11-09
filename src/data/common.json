@@ -3,7 +3,7 @@
     "title": "BINABOX"
   },
   "header": {
-    "logo": "logo.svg",
+    "Logo": "Logo",
     "logoAlt": "BINABOX",
     "menu": [
       {
@@ -32,11 +32,8 @@
     "loginButton": "Log in"
   },
   "footer": {
-    "logo": {
-      "href": "#",
-      "src": "#",
-      "alt": "BINABOX"
-    },
+    "logo": "Logo",
+    "logoAlt": "BINABOX",
     "description": "We are the best way to check the rarity of NFT collection.",
     "navigation_title": "Navigation",
     "navigation_links": [

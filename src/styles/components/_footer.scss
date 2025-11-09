@@ -1,6 +1,28 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 .footer {
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    height: 94px;
+  }
+  &__logo-wrapper {
+    display: flex;
+    gap: 18px;
+    width: 188px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo1 {
+    width: 36px;
+    height: 40px;
+  }
+  &__logo2 {
+    width: 133px;
+    height: 21px;
+  }
   &__text {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
