@@ -53,6 +53,13 @@
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
   }
+  &__info-link {
+       width: 32px;
+      height: 32px;
+      gap: 8px;
+      padding: 8px;
+     border: 2px solid #D0D7FB2B;
+  }
 
   &__text {
     &--color {

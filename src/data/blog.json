@@ -53,7 +53,8 @@
       "name": "Tony Nguyen",
       "date": "2022-06-20",
       "dateFormatted": "20 Jun 2022",
-      "icon": "tony-icon.png"
+      "icon": "user",
+      "dateIcon": "calendar"
     },
     "intro_paragraph": {
       "highlight_text": "Basilisks",
@@ -74,24 +75,24 @@
     "feature": [
       {
         "label": "Unique DNA structure",
-        "icon": "unique.png"
+        "icon": "Logo"
       },
       {
         "label": "PvP-enable arena",
-        "icon": "pvp.png"
+        "icon": "Logo"
       },
       {
         "label": "Permanent death mode",
-        "icon": "death.png"
+        "icon": "Logo"
       },
       {
         "label": "Metaverse integration",
-        "icon": "metaverse.png"
+        "icon": "Logo"
       }
     ],
-    "quote": "The first huge metaverse arena...",
+    "quote": "“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”",
     "rating": {
-      "icon": "stars.png",
+      "icon": "stars",
       "score": "8.5/10",
       "source": "Markout Corporation"
     },
@@ -173,9 +174,15 @@
       "Crypto"
     ],
     "share": [
-      "Twitter",
-      "Facebook",
-      "Instagram"
+      {
+        "name": "Twitter"
+      },
+      {
+        "name": "facebook"
+      },
+      {
+        "name": "Instagram"
+      }
     ]
   },
   "aside": {

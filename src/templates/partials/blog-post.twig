@@ -21,10 +21,16 @@
 	<button class="post__button button">{{ post.category }}</button>
 
 	<p class="post__text">
-		<img src="{{ post.author.icon }}" alt="Author icon" class="post__icon"/>
+		<svg class="post__icon">
+			<use xlink:href="src/assets/icons/sprite.svg#{{ post.author.icon }}"></use>
+		</svg>
 		<span class="post__address">{{ post.author.name }}
 			|</span>
-		<time datetime="{{ post.author.date }}">{{ post.author.dateFormatted }}</time>
+		<time datetime="{{ post.author.date }}">
+			<svg class="post__icon-date">
+				<use xlink:href="src/assets/icons/sprite.svg#{{ post.author.dateIcon }}"></use>
+			</svg>
+			{{ post.author.dateFormatted }}</time>
 	</p>
 
 	<p class="post__text">
@@ -40,24 +46,30 @@
 		{% endfor %}
 	</ul>
 
-
 	<ul class="post__logos">
-		{% for logo in post.features %}
+		{% for logo in post.feature %}
 			<li class="post__logo">
-				<a href="#" class="post__logo-item"><img src="{{ logo.icon }}" alt="{{ logo.label }}"/>{{ logo.label }}</a>
+				<a href="#" class="post__logo-item">
+					<svg class="post__logo-icon">
+						<use xlink:href="src/assets/icons/sprite.svg#{{ logo.icon }}"></use>
+					</svg>
+					{{ logo.label }}
+				</a>
 			</li>
 		{% endfor %}
 	</ul>
 
 	<blockquote class="post__quote post__quote--background">
-		"{{ post.quote }}"
+		"{{ post.quote }}"<br/>
+		<span class="post__rating">
+			<svg class="post__rating-icon">
+				<use xlink:href="src/assets/icons/sprite.svg#{{ post.rating.icon }}"></use>
+			</svg>
+			{{ post.rating.score }}
+			{{ post.rating.source }}
+		</span>
 	</blockquote>
 
-	<span class="post__rating">
-		<img src="{{ post.rating.icon }}" alt="Rating icon" class="post__rating-icon"/>
-		{{ post.rating.score }}
-		{{ post.rating.source }}
-	</span>
 	{% for figure in post.gallery %}
 		<figure class="post__figure">
 			<img src="{{ figure.src }}" alt="{{ figure.alt }}" class="post__image"/>
@@ -73,34 +85,6 @@
 			<figcaption class="post__caption">{{ figure.caption }}</figcaption>
 		</figure>
 	{% endfor %}
-	{# <figure
-																							class="post__figure">
-																							<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
-																							{{ ui.picture(
-																											figure.picture.class,
-																											figure.picture.src,
-																											figure.picture.source,
-																											figure.picture.alt,
-																											figure.picture.width,
-																											figure.picture.height,
-																											figure.picture.fit
-																										) }}
-																							<figcaption class="post__caption">{{ figure.caption }}</figcaption>
-																						</figure>
-																					
-																						<figure
-																							class="post__figure">
-																							<img src="{{ figure.img }}" alt="{{ figure.alt }}" class="post__image"/>
-																							{{ ui.picture(
-																											figure.picture.class,
-																											figure.picture.source,
-																											figure.picture.alt,
-																											figure.picture.width,
-																											figure.picture.height,
-																											figure.picture.fit
-																										) }}
-																							<figcaption class="post__caption">{{ figure.caption }}</figcaption>
-																						</figure> #}
 	<section class="post">
 		<h3 class="post__subtittle">{{ post.nft_intro.title }}</h3>
 		<p class="post__text">
@@ -131,15 +115,27 @@
 			</li>
 		{% endfor %}
 	</ul>
+	<div class="post__share-wrapper">
+		<p class="post__info">Share:</p>
+		{% set icons = {
+			'Twitter': 'Twitter',
+			'facebook': 'facebook',
+			'Instagram': 'Instagram'
+		} %}
+		<ul class="post__info-menu">
+			{% for share in post.share %}
+				<li class="post__info-item">
+					<a href="#" class="post__info-link">
+						<svg class="post__info-icon">
+							<use xlink:href="src/assets/icons/sprite.svg#{{ icons[share.name] }}"></use>
+						</svg>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 
-	<p class="post__info">Share:</p>
-	<ul class="post__info-menu">
-		{% for share in post.share %}
-			<li class="post__info-item">
-				<a href="#">{{ share }}</a>
-			</li>
-		{% endfor %}
-	</ul>
+
 </section>
 
 {# make it work  #}
