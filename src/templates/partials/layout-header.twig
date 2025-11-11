@@ -31,7 +31,12 @@
 		</ul>
 	</nav>
 	<div class="page-header__form">
-		<input class="page-header__search-input" type="text" name="search" id="search" placeholder="{{ header.searchPlaceholder }}"/>
+		<label for="search" class="page-header__search-label">
+			<svg class="page-header__search-icon">
+				<use xlink:href="src/assets/icons/sprite.svg#search"></use>
+			</svg>
+			<input class="page-header__search-input" type="text" name="search" id="search" placeholder="{{ header.searchPlaceholder }}"/>
+		</label>
 		<a href="{{ header.discord.url }}" class="page-header__link link">
 			<svg class="link__icon">
 				<use xlink:href="src/assets/icons/sprite.svg#Discord"></use>
