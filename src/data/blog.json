@@ -5,15 +5,15 @@
   "heading": "Our blog",
   "breadcrumbs": [
     {
-      "label1": "Home",
+      "name": "Home",
       "href": "/home"
     },
     {
-      "label1": "Our blog",
+      "name": "Our blog",
       "href": "/blog"
     },
     {
-      "label1": "The Basilisks NFT",
+      "name": "The Basilisks NFT",
       "href": "/basilisks",
       "highlight": true
     }
