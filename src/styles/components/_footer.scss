@@ -40,4 +40,12 @@
     font-size: var(--font-size-xs);
     line-height: var(--line-height-xs);
   }
+  &__directries-icon {
+    &:hover {
+      background-color:  #BFC5EE1F;
+    }
+    &:focus {
+      border: 4px solid  #3892F3;
+  }
+}
 }

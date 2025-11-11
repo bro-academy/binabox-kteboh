@@ -37,10 +37,13 @@
     display: flex;
     gap: 8px;
   }
-  &__social-item {
-    display: inline-flex;
-    justify-content: center;
-    gap: 8px;
+  &__social-icon {
+   &:hover {
+     background-color:  #BFC5EE1F;
+    }
+    &:focus {
+     border: 4px solid  #3892F3;
+    }
   }
 
   &__name {

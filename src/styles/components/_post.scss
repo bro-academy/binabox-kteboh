@@ -59,6 +59,12 @@
       gap: 8px;
       padding: 8px;
      border: 2px solid #D0D7FB2B;
+     &:hover {
+       background-color:  #BFC5EE1F;
+     }
+      &:focus {
+       border: 4px solid  #3892F3;
+  }
   }
 
   &__text {
