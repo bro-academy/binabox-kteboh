@@ -62,6 +62,8 @@
     "icon": "#",
     "title": "Catalog",
     "see_all_link": "#",
+    "svg-left": "Arrow-chevron-left",
+    "svg-right": "Arrow-chevron-right",
     "items": [
       {
         "picture": {
@@ -249,7 +251,8 @@
         "date": "2022-12-04",
         "title": "Neural Drift",
         "excerpt": "I woke up inside the void.My body stayed in the pass - only thoughts were allowed throug...",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       },
       {
         "picture": {
@@ -283,7 +286,8 @@
         "date": "2022-12-06",
         "title": "Deadframe",
         "excerpt": "He just stood there,waiting.Not for a person - for a signal.Like the memoryof the network...",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       },
       {
         "picture": {
@@ -317,7 +321,8 @@
         "date": "2022-12-07",
         "title": "Glitch Panther",
         "excerpt": "Cats always knew more than they showed.Especially the ones tha vanish into code.",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       },
       {
         "picture": {
@@ -351,7 +356,8 @@
         "date": "2022-12-08",
         "title": "Primal.exe",
         "excerpt": "We tried to resurrect the post.What we got was rage compressed into an algorithm",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       },
       {
         "picture": {
@@ -385,7 +391,8 @@
         "date": "2022-06-20",
         "title": "White Protocol",
         "excerpt": "At first, it was just a signal - clean, white, hypnotic. We didn't know it wasd alive.",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       },
       {
         "picture": {
@@ -419,7 +426,8 @@
         "date": "2022-12-09",
         "title": "Retrocore",
         "excerpt": "This console comes from a game on one remembers how to play.But it's still powered on.",
-        "url": "#"
+        "url": "#",
+        "image": "Arrows-chevron-right"
       }
     ],
     "read_more_url": "#"

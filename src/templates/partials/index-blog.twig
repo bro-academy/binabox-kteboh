@@ -32,9 +32,17 @@
 
 					<h3 class="blog__subtittle subtittle">{{ article.title }}</h3>
 					<p class="blog__text">{{ article.excerpt }}</p>
-					<a href="{{ article.url }}" class="blog__link link">Read more ></a>
-				</li>
+					<a href="{{ article.url }}" class="blog__link link">Read more
+						{% if article.image is defined and article.image %}
+							<svg class="blog__link-icon">
+								<use xlink:href="src/assets/icons/sprite.svg#{{ article.image }}"></use>
+							</svg>
+						{% endif %}
+					</a>
+				</article>
 			</li>
-		</article>
-	</li>
-{% endfor %}</ul><a href="{{ blog.read_more_url }}" class="link blog__action">Read more</a></section>{# make it work  #}
+		{% endfor %}
+	</ul>
+	<a href="{{ blog.read_more_url }}" class="link blog__action">Read more</a>
+</section>
+{# make it work  #}
