@@ -19,11 +19,18 @@
     justify-content: space-between;
     padding: 24px;
   }
+  &__divider {
+    opacity: 0.1;
+    width: 97%;
+    margin: auto;
+  }
 
   &__answer {
     font-weight: $font-weight-semibold;
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
+    width: 1420px;
+    padding: 24px;
 
     &--color {
       color: var(--label-color);

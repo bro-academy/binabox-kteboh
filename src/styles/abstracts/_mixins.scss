@@ -44,6 +44,7 @@
   line-height: var(--line-height-sm);
   color: var(--label-color);
   background-color: var(--label-bg-color);
+  padding: 8px 10px;
 }
 
 @mixin large-centered-title {

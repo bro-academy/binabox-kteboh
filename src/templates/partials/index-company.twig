@@ -3,8 +3,21 @@
 	<p class="company__description">{{ company.description }}</p>
 	<ul class="company__menu">
 		{% for feature in company.features %}
-			<li class="company__item">
-				<span class="company__order">{{ feature.order }}</span>
+			<li
+				class="company__item">
+
+				{# <span class="company__order">{{ feature.order }}</span> #}
+				{% set icons = 
+		{
+			'01': '01',
+			'02': '02',
+			'03': '03',
+			'04': '04'
+		}
+ %}
+				<svg class="company__icon">
+					<use xlink:href="src/assets/icons/sprite.svg#{{ icons[feature.order] }}"></use>
+				</svg>
 				<h3 class="company__subtittle subtittle">{{ feature.title }}</h3>
 				<p class="company__text">{{ feature.text }}</p>
 			</li>

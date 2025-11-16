@@ -6,6 +6,10 @@
     font-size: var(--font-size-xl);
     line-height: var(--line-height-lg);
   }
+  &__menu {
+    display: flex;
+    gap: 32px;
+  }
 
   &__tittle {
     font-family: $font-family-heading;
@@ -16,10 +20,23 @@
   &__subtittle {
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-xl);
+    margin-bottom: 24px;
   }
 
   &__item {
     background-color: var(--secondary-bg-color);
+    width: 376px;
+    height: 234px;
+    padding: 32px;
+    position: relative;
+  }
+  &__icon {
+    width: 70px;
+    height: 50px;
+    opacity: 0.5;
+    border-width: 2px;
+    position: absolute;
+    top: 10px;
   }
 
   &__action {
