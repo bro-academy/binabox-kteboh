@@ -20,6 +20,9 @@
 
   &__label {
     @include product-label-style;
+    height: 31px;
+    width: 20px;
+    padding: 8px 10px;
 
     &--sold-out {
       background-color: var(--label-modifier-color);
