@@ -5,10 +5,13 @@
     font-weight: $font-weight-medium;
     font-size: var(--font-size-xl);
     line-height: var(--line-height-lg);
+    text-align: center;
+    margin-bottom: $bottom-margin-m;
   }
   &__menu {
     display: flex;
     gap: 32px;
+    margin-bottom: $bottom-margin-m;
   }
 
   &__tittle {
@@ -20,7 +23,7 @@
   &__subtittle {
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-xl);
-    margin-bottom: 24px;
+    margin-bottom: $bottom-margin-s;
   }
 
   &__item {

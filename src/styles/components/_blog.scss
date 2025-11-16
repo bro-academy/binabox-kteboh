@@ -5,6 +5,7 @@
     font-family: $font-family-heading;
     font-weight: $font-weight-normal;
     @include large-centered-title;
+    margin-bottom: $bottom-margin-m;
   }
 
   &__item {

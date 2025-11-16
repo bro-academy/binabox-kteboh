@@ -21,7 +21,7 @@
   line-height: var(--line-height-base);
   border: 2px solid var(--link-border-color);
   padding: 10px 24px;
-  background-color: $main-bg-color;
+  // background-color: $main-bg-color;
   display: inline-flex;
   gap: 8px;
 }
@@ -60,4 +60,5 @@
   max-width: 153px;
   font-size: var(--font-size-lg);
   line-height: var(--line-height-lg);
+  margin-top: $top-margin-m;
 }

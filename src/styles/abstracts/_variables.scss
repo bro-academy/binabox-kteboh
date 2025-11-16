@@ -72,3 +72,9 @@ $font-weight-semibold: 600;
   --line-height-3xl: #{$line-height-3xl};
   --line-height-4xl: #{$line-height-4xl};
 }
+
+// margins and paddings for sections can be added here
+$top-margin-m: 40px;
+$bottom-margin-m: 40px;
+$bottom-margin-s: 24px;
+$section-padding: 64px;

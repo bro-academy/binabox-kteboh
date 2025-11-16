@@ -7,6 +7,25 @@
     font-size: var(--font-size-2xl);
     line-height: var(--line-height-xl);
   }
+  &__tittle-wrapper {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__divider-container {
+    align-content: center;
+    width: 1000px;
+  }
+  &__button-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+  &__line {
+    align-content: center;
+    width: 2px;
+    border-radius: 2px;
+    color: #D0D7FB2B;
+  }
 
   &__button {
     &--color {

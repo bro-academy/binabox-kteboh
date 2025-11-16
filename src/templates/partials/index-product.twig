@@ -1,21 +1,28 @@
 {% import 'ui/picture.twig' as ui %}
 <section class="product">
-	<h2 class="product__tittle">
-		<svg class="product__tittle-icon">
-			<use xlink:href="src/assets/icons/sprite.svg#folder"></use>
-		</svg>
-		{{ product.title }}</h2>
-	<a href="{{ product.see_all_link }}" class="product__link--highlight link">See all</a>
-	<button class="button product__button-primary--highlight">
-		<svg class="product__button-icon">
-			<use xlink:href="src/assets/icons/sprite.svg#Arrow-chevron-left"></use>
-		</svg>
-	</button>
-	<button class="button product__button--color">
-		<svg class="product__button-icon-secondary">
-			<use xlink:href="src/assets/icons/sprite.svg#Arrows-chevron-right"></use>
-		</svg>
-	</button>
+	<div class="product__tittle-wrapper">
+		<h2 class="product__tittle">
+			<svg class="product__tittle-icon">
+				<use xlink:href="src/assets/icons/sprite.svg#folder"></use>
+			</svg>
+			{{ product.title }}</h2>
+
+		<div class="product__divider-container"><hr class="product__divider"/></div>
+		<div class="product__button-wrapper">
+			<a href="{{ product.see_all_link }}" class="product__link--highlight link">See all</a>
+			<div class="product__line">|</div>
+			<button class="button product__button-primary--highlight">
+				<svg class="product__button-icon">
+					<use xlink:href="src/assets/icons/sprite.svg#Arrow-chevron-left"></use>
+				</svg>
+			</button>
+			<button class="button product__button--color">
+				<svg class="product__button-icon-secondary">
+					<use xlink:href="src/assets/icons/sprite.svg#Arrows-chevron-right"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
 	<ul class="product__menu">
 		{% for item in product.items %}
 			<li class="product__item">
