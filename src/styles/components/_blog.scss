@@ -6,15 +6,15 @@
     font-weight: $font-weight-normal;
     @include large-centered-title;
   }
-  
+
   &__item {
     background-color: var(--secondary-bg-color);
   }
-  
+
   &__label {
     @include product-label-style;
   }
-  
+
   &__author,
   &__date {
     font-weight: $font-weight-semibold;
@@ -33,7 +33,7 @@
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
   }
-  
+
   &__action {
     @include centered-action-button;
   }

@@ -1,0 +1,11 @@
+<section class="breadcrumbs">
+	<h1 class="breadcrumbs__title {{ breadcrumbs.title_class }}">{{ breadcrumbs.title }}</h1>
+
+	<ul class="breadcrumbs__menu">
+		{% for item in breadcrumbs.items %}
+			<li class="breadcrumbs__unit">
+				<a href="{{ item.url }}">{{ item.text }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

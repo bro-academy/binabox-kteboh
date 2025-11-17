@@ -2,18 +2,18 @@
   "page": {
     "title": "OUR BLOG"
   },
-  "title": "Our blog",
+  "heading": "Our blog",
   "breadcrumbs": [
     {
-      "label": "Home",
+      "name": "Home",
       "href": "/home"
     },
     {
-      "label": "Our blog",
+      "name": "Our blog",
       "href": "/blog"
     },
     {
-      "label": "The Basilisks NFT",
+      "name": "The Basilisks NFT",
       "href": "/basilisks",
       "highlight": true
     }

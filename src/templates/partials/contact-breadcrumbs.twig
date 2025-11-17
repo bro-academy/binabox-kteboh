@@ -1,10 +1,10 @@
 <section class="breadcrumbs">
-	<h1 class="breadcrumbs__tittle breadcrumbs__tittle--action">{{ heading }}</h1>
+	<h1 class="breadcrumbs__tittle breadcrumbs__tittle--action">{{ intro }}</h1>
 	<ul class="breadcrumbs__menu">
 		{% for item in breadcrumbs %}
 			<li class="breadcrumbs__unit">
 				<a href="{{ item.url }}" class="{% if item.highlight %}breadcrumbs__highlight breadcrumbs__highlight--text{% endif %}">
-					{{ item.name }}
+					{{ item.label }}
 					{% if not loop.last %}
 						|
 					{% endif %}
@@ -13,5 +13,3 @@
 		{% endfor %}
 	</ul>
 </section>
-
-{# make it work  #}
